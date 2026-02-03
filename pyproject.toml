@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "stockpred"
+version = "1.0.0"
+description = "Stock Prediction API with FastAPI"
+authors = [{name = "Amrit Raj Dhar", email = "amritrajdhar@example.com"}]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.8"
+
+[project.scripts]
+app = "app:app"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["*"]
+
+[tool.pyright]
+include = ["backend", "frontend", "models"]
+exclude = ["**/__pycache__", "**/node_modules"]
