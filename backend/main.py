@@ -391,13 +391,66 @@ def generate_fallback_predictions(symbol: str, current_price: float) -> dict:
 async def root():
     """Serve the frontend HTML file"""
     try:
-        with open("frontend/index.html", "r") as f:
-            content = f.read()
+        # Try multiple possible paths for the frontend file
+        possible_paths = [
+            "frontend/index.html",
+            "../frontend/index.html", 
+            "./frontend/index.html",
+            os.path.join(os.getcwd(), "frontend/index.html"),
+            os.path.join(os.path.dirname(__file__), "../frontend/index.html")
+        ]
+        
+        content = None
+        for path in possible_paths:
+            try:
+                with open(path, "r") as f:
+                    content = f.read()
+                    print(f"✅ Found frontend at: {path}")
+                    break
+            except FileNotFoundError:
+                continue
+        
+        if content:
             return HTMLResponse(content=content)
-    except FileNotFoundError:
+        else:
+            # Fallback HTML if frontend not found
+            fallback_html = """
+            <!DOCTYPE html>
+            <html>
+            <head>
+                <title>StockPred - Stock Prediction API</title>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <script src="https://cdn.tailwindcss.com"></script>
+                <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+            </head>
+            <body class="bg-gray-100">
+                <div class="container mx-auto px-4 py-8">
+                    <div class="bg-white rounded-lg shadow-lg p-8">
+                        <h1 class="text-3xl font-bold text-center mb-4">StockPred API</h1>
+                        <div class="text-center">
+                            <p class="text-yellow-600 mb-4">⚠️ Frontend files not found</p>
+                            <p class="mb-6">The API is running but the frontend files could not be located.</p>
+                            <div class="bg-gray-50 rounded p-4">
+                                <h3 class="font-semibold mb-2">Available Endpoints:</h3>
+                                <ul class="text-left">
+                                    <li><a href="/api" class="text-blue-600 hover:underline">/api</a> - API Information</li>
+                                    <li><a href="/docs" class="text-blue-600 hover:underline">/docs</a> - API Documentation</li>
+                                    <li><a href="/stocks" class="text-blue-600 hover:underline">/stocks</a> - Available Stocks</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </body>
+            </html>
+            """
+            return HTMLResponse(content=fallback_html)
+            
+    except Exception as e:
         return JSONResponse(
-            content={"message": "NSE Stock Prediction API - Frontend not found"},
-            status_code=404
+            content={"error": f"Failed to serve frontend: {str(e)}"},
+            status_code=500
         )
 
 @app.get("/api")
