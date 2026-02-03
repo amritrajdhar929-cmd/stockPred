@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Dark Mode</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+            color: #1f2937;
+            transition: background 0.3s ease, color 0.3s ease;
+        }
+        
+        body.dark-mode {
+            background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
+            color: #f9fafb;
+        }
+        
+        .dark-mode-toggle {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+            pointer-events: auto;
+            z-index: 10;
+            cursor: pointer;
+        }
+        
+        .dark-mode-toggle:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+        
+        .dark-mode-toggle:active {
+            transform: scale(0.95);
+        }
+        
+        .dark-mode .dark-mode-toggle {
+            background: rgba(0, 0, 0, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .dark-mode .dark-mode-toggle:hover {
+            background: rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex items-center justify-center">
+    <div class="text-center">
+        <h1 class="text-2xl font-bold mb-4">Dark Mode Test</h1>
+        <button 
+            id="darkModeToggle"
+            class="dark-mode-toggle p-4 rounded-lg flex items-center justify-center"
+            onclick="toggleDarkMode()"
+        >
+            <i id="darkModeIcon" class="fas fa-moon text-gray-600 mr-2"></i>
+            Toggle Dark Mode
+        </button>
+        <p id="status" class="mt-4 text-gray-600">Click the button to test dark mode</p>
+    </div>
+    
+    <script>
+        function toggleDarkMode() {
+            const body = document.body;
+            const darkModeIcon = document.getElementById('darkModeIcon');
+            const status = document.getElementById('status');
+            
+            if (!body || !darkModeIcon) {
+                console.error('Dark mode toggle: Required elements not found');
+                status.textContent = 'Error: Elements not found';
+                return;
+            }
+            
+            body.classList.toggle('dark-mode');
+            
+            if (body.classList.contains('dark-mode')) {
+                darkModeIcon.classList.remove('fa-moon');
+                darkModeIcon.classList.add('fa-sun');
+                localStorage.setItem('darkMode', 'true');
+                status.textContent = 'Dark mode enabled';
+                status.className = 'mt-4 text-yellow-400';
+            } else {
+                darkModeIcon.classList.remove('fa-sun');
+                darkModeIcon.classList.add('fa-moon');
+                localStorage.setItem('darkMode', 'false');
+                status.textContent = 'Light mode enabled';
+                status.className = 'mt-4 text-gray-600';
+            }
+            
+            console.log('Dark mode toggled:', body.classList.contains('dark-mode'));
+        }
+        
+        // Initialize dark mode preference
+        function initDarkMode() {
+            const savedDarkMode = localStorage.getItem('darkMode');
+            const darkModeIcon = document.getElementById('darkModeIcon');
+            
+            if (savedDarkMode === 'true') {
+                document.body.classList.add('dark-mode');
+                darkModeIcon.classList.remove('fa-moon');
+                darkModeIcon.classList.add('fa-sun');
+            }
+        }
+        
+        // Initialize on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            initDarkMode();
+            console.log('Test page loaded');
+        });
+    </script>
+</body>
+</html>

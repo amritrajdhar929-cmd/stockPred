@@ -1,0 +1,662 @@
+{
+  "RELIANCE": {
+    "status": "success",
+    "data_points": 781,
+    "validation_scores": {
+      "1_day": {
+        "mae": 15.630325000000003,
+        "mae_std": 20.598746598223215,
+        "samples": 751
+      },
+      "5_day": {
+        "mae": 750.096,
+        "mae_std": 738.3324122785233,
+        "samples": 751
+      },
+      "30_day": {
+        "mae": 1343.79665,
+        "mae_std": 1098.8007831606035,
+        "samples": 751
+      }
+    },
+    "trained_at": "2026-02-02T23:01:01.661895"
+  },
+  "TCS": {
+    "status": "success",
+    "data_points": 781,
+    "validation_scores": {
+      "1_day": {
+        "mae": 3.1310172088623047,
+        "mae_std": 4.853877284935738,
+        "samples": 751
+      },
+      "5_day": {
+        "mae": 2.8811096389770507,
+        "mae_std": 4.224949110008803,
+        "samples": 751
+      },
+      "30_day": {
+        "mae": 1.528585577392578,
+        "mae_std": 2.351570119096015,
+        "samples": 751
+      }
+    },
+    "trained_at": "2026-02-02T23:01:07.020006"
+  },
+  "HDFCBANK": {
+    "status": "success",
+    "data_points": 781,
+    "validation_scores": {
+      "1_day": {
+        "mae": 1.6658010086059574,
+        "mae_std": 2.9012675242968986,
+        "samples": 751
+      },
+      "5_day": {
+        "mae": 1.483156817626953,
+        "mae_std": 2.8226150594059303,
+        "samples": 751
+      },
+      "30_day": {
+        "mae": 2.2147321060180665,
+        "mae_std": 4.157112825544766,
+        "samples": 751
+      }
+    },
+    "trained_at": "2026-02-02T23:01:12.477352"
+  },
+  "INFY": {
+    "status": "success",
+    "data_points": 781,
+    "validation_scores": {
+      "1_day": {
+        "mae": 96.21815000000001,
+        "mae_std": 123.5942610469624,
+        "samples": 751
+      },
+      "5_day": {
+        "mae": 590.2337500000001,
+        "mae_std": 730.2456090893635,
+        "samples": 751
+      },
+      "30_day": {
+        "mae": 828.8770875,
+        "mae_std": 992.7195290544458,
+        "samples": 751
+      }
+    },
+    "trained_at": "2026-02-02T23:01:16.445038"
+  },
+  "ICICIBANK": {
+    "status": "success",
+    "data_points": 781,
+    "validation_scores": {
+      "1_day": {
+        "mae": 14.3787375,
+        "mae_std": 21.714586892059735,
+        "samples": 751
+      },
+      "5_day": {
+        "mae": 462.07716250000004,
+        "mae_std": 633.6824408211235,
+        "samples": 751
+      },
+      "30_day": {
+        "mae": 1089.0174875,
+        "mae_std": 1388.446483670074,
+        "samples": 751
+      }
+    },
+    "trained_at": "2026-02-02T23:01:20.343303"
+  },
+  "HINDUNILVR": {
+    "status": "success",
+    "data_points": 781,
+    "validation_scores": {
+      "1_day": {
+        "mae": 4.790027410888672,
+        "mae_std": 9.0537039915337,
+        "samples": 751
+      },
+      "5_day": {
+        "mae": 24.161929592895508,
+        "mae_std": 48.162982957588525,
+        "samples": 751
+      },
+      "30_day": {
+        "mae": 22.418911039733885,
+        "mae_std": 44.50361790991181,
+        "samples": 751
+      }
+    },
+    "trained_at": "2026-02-02T23:01:25.935231"
+  },
+  "SBIN": {
+    "status": "success",
+    "data_points": 781,
+    "validation_scores": {
+      "1_day": {
+        "mae": 1.1841862640380858,
+        "mae_std": 2.099162582202543,
+        "samples": 751
+      },
+      "5_day": {
+        "mae": 1.3136797164916993,
+        "mae_std": 2.3843668461029672,
+        "samples": 751
+      },
+      "30_day": {
+        "mae": 4.0024986282348625,
+        "mae_std": 7.858670996961338,
+        "samples": 751
+      }
+    },
+    "trained_at": "2026-02-02T23:01:31.339385"
+  },
+  "BAJFINANCE": {
+    "status": "success",
+    "data_points": 781,
+    "validation_scores": {
+      "1_day": {
+        "mae": 1.226702554321289,
+        "mae_std": 1.9783834160005767,
+        "samples": 751
+      },
+      "5_day": {
+        "mae": 1.0671912139892579,
+        "mae_std": 1.7663674295687786,
+        "samples": 751
+      },
+      "30_day": {
+        "mae": 0.5233299072265625,
+        "mae_std": 0.6954207654036207,
+        "samples": 751
+      }
+    },
+    "trained_at": "2026-02-02T23:01:36.689520"
+  },
+  "BHARTIARTL": {
+    "status": "success",
+    "data_points": 781,
+    "validation_scores": {
+      "1_day": {
+        "mae": 133.50657500000003,
+        "mae_std": 147.59634784819585,
+        "samples": 751
+      },
+      "5_day": {
+        "mae": 1219.453325,
+        "mae_std": 1047.0867265752643,
+        "samples": 751
+      },
+      "30_day": {
+        "mae": 822.0862749999999,
+        "mae_std": 828.0901754823014,
+        "samples": 751
+      }
+    },
+    "trained_at": "2026-02-02T23:01:40.730187"
+  },
+  "KOTAKBANK": {
+    "status": "success",
+    "data_points": 781,
+    "validation_scores": {
+      "1_day": {
+        "mae": 84.7994375,
+        "mae_std": 159.65496897484215,
+        "samples": 751
+      },
+      "5_day": {
+        "mae": 1171.026025,
+        "mae_std": 1011.5997321255087,
+        "samples": 751
+      },
+      "30_day": {
+        "mae": 9031.980303125001,
+        "mae_std": 15777.891074229188,
+        "samples": 751
+      }
+    },
+    "trained_at": "2026-02-02T23:01:44.997435"
+  },
+  "WIPRO": {
+    "status": "success",
+    "data_points": 781,
+    "validation_scores": {
+      "1_day": {
+        "mae": 0.7455442062377929,
+        "mae_std": 1.36352276776221,
+        "samples": 751
+      },
+      "5_day": {
+        "mae": 0.29757395324707037,
+        "mae_std": 0.5738804233881015,
+        "samples": 751
+      },
+      "30_day": {
+        "mae": 1.2860442794799805,
+        "mae_std": 2.3694386101037277,
+        "samples": 751
+      }
+    },
+    "trained_at": "2026-02-02T23:01:50.421869"
+  },
+  "AXISBANK": {
+    "status": "success",
+    "data_points": 781,
+    "validation_scores": {
+      "1_day": {
+        "mae": 0.5462712799072265,
+        "mae_std": 0.9977039750921852,
+        "samples": 751
+      },
+      "5_day": {
+        "mae": 0.6887275695800781,
+        "mae_std": 1.0390187282689054,
+        "samples": 751
+      },
+      "30_day": {
+        "mae": 0.325187565612793,
+        "mae_std": 0.4848145413410811,
+        "samples": 751
+      }
+    },
+    "trained_at": "2026-02-02T23:01:55.769919"
+  },
+  "ITC": {
+    "status": "success",
+    "data_points": 781,
+    "validation_scores": {
+      "1_day": {
+        "mae": 267.213225,
+        "mae_std": 148.67101527297717,
+        "samples": 751
+      },
+      "5_day": {
+        "mae": 1511.9276375000002,
+        "mae_std": 848.7019868885934,
+        "samples": 751
+      },
+      "30_day": {
+        "mae": 1252.0231749999998,
+        "mae_std": 696.5153690624946,
+        "samples": 751
+      }
+    },
+    "trained_at": "2026-02-02T23:01:59.796066"
+  },
+  "HCLTECH": {
+    "status": "success",
+    "data_points": 781,
+    "validation_scores": {
+      "1_day": {
+        "mae": 100.72681250000001,
+        "mae_std": 123.90817874939567,
+        "samples": 751
+      },
+      "5_day": {
+        "mae": 451.70748749999996,
+        "mae_std": 634.3468015138257,
+        "samples": 751
+      },
+      "30_day": {
+        "mae": 843.6949125000001,
+        "mae_std": 1030.9877725430906,
+        "samples": 751
+      }
+    },
+    "trained_at": "2026-02-02T23:02:03.931299"
+  },
+  "ASIANPAINT": {
+    "status": "success",
+    "data_points": 781,
+    "validation_scores": {
+      "1_day": {
+        "mae": 102.46947500000002,
+        "mae_std": 125.66651631343197,
+        "samples": 751
+      },
+      "5_day": {
+        "mae": 449.486675,
+        "mae_std": 562.6242790862735,
+        "samples": 751
+      },
+      "30_day": {
+        "mae": 904.5734125000001,
+        "mae_std": 1098.5024966041929,
+        "samples": 751
+      }
+    },
+    "trained_at": "2026-02-02T23:02:07.723329"
+  },
+  "MARUTI": {
+    "status": "success",
+    "data_points": 781,
+    "validation_scores": {
+      "1_day": {
+        "mae": 205.4640625,
+        "mae_std": 166.8805757219253,
+        "samples": 751
+      },
+      "5_day": {
+        "mae": 1232.3287625,
+        "mae_std": 1039.8574228671375,
+        "samples": 751
+      },
+      "30_day": {
+        "mae": 991.5548375000001,
+        "mae_std": 1063.2545162006775,
+        "samples": 751
+      }
+    },
+    "trained_at": "2026-02-02T23:02:12.298771"
+  },
+  "TATAMOTORS": {
+    "status": "success",
+    "data_points": 781,
+    "validation_scores": {
+      "1_day": {
+        "mae": 169.67848750000002,
+        "mae_std": 157.78729504295984,
+        "samples": 751
+      },
+      "5_day": {
+        "mae": 998.12945,
+        "mae_std": 885.5547757814319,
+        "samples": 751
+      },
+      "30_day": {
+        "mae": 933.1292874999999,
+        "mae_std": 787.2058309445301,
+        "samples": 751
+      }
+    },
+    "trained_at": "2026-02-02T23:02:16.624792"
+  },
+  "SUNPHARMA": {
+    "status": "success",
+    "data_points": 781,
+    "validation_scores": {
+      "1_day": {
+        "mae": 44.676387500000004,
+        "mae_std": 83.97374231631501,
+        "samples": 751
+      },
+      "5_day": {
+        "mae": 493.02592500000003,
+        "mae_std": 603.9415674254273,
+        "samples": 751
+      },
+      "30_day": {
+        "mae": 859.7837999999999,
+        "mae_std": 1050.96866663557,
+        "samples": 751
+      }
+    },
+    "trained_at": "2026-02-02T23:02:20.542146"
+  },
+  "TITAN": {
+    "status": "success",
+    "data_points": 781,
+    "validation_scores": {
+      "1_day": {
+        "mae": 206.25929639434813,
+        "mae_std": 412.33499447218003,
+        "samples": 751
+      },
+      "5_day": {
+        "mae": 184.4838422515869,
+        "mae_std": 368.8353848431929,
+        "samples": 751
+      },
+      "30_day": {
+        "mae": 228.93599560699462,
+        "mae_std": 457.7049191564225,
+        "samples": 751
+      }
+    },
+    "trained_at": "2026-02-02T23:02:27.029056"
+  },
+  "NTPC": {
+    "status": "success",
+    "data_points": 781,
+    "validation_scores": {
+      "1_day": {
+        "mae": 201.65508749999998,
+        "mae_std": 164.46599452415592,
+        "samples": 751
+      },
+      "5_day": {
+        "mae": 853.8704625,
+        "mae_std": 771.7036121913783,
+        "samples": 751
+      },
+      "30_day": {
+        "mae": 1415.07395,
+        "mae_std": 1158.4591094942125,
+        "samples": 751
+      }
+    },
+    "trained_at": "2026-02-02T23:02:31.119077"
+  },
+  "ULTRACEMCO": {
+    "status": "success",
+    "data_points": 781,
+    "validation_scores": {
+      "1_day": {
+        "mae": 61.56695,
+        "mae_std": 98.51698247831912,
+        "samples": 751
+      },
+      "5_day": {
+        "mae": 400.08630000000005,
+        "mae_std": 627.2006972678001,
+        "samples": 751
+      },
+      "30_day": {
+        "mae": 721.7432125,
+        "mae_std": 876.3451201061059,
+        "samples": 751
+      }
+    },
+    "trained_at": "2026-02-02T23:02:35.075171"
+  },
+  "TECHM": {
+    "status": "success",
+    "data_points": 781,
+    "validation_scores": {
+      "1_day": {
+        "mae": 67.96195,
+        "mae_std": 130.10599711598977,
+        "samples": 751
+      },
+      "5_day": {
+        "mae": 846.6996999999999,
+        "mae_std": 743.5183311272718,
+        "samples": 751
+      },
+      "30_day": {
+        "mae": 1191.2424999999998,
+        "mae_std": 972.89936994189,
+        "samples": 751
+      }
+    },
+    "trained_at": "2026-02-02T23:02:39.164982"
+  },
+  "GRASIM": {
+    "status": "success",
+    "data_points": 781,
+    "validation_scores": {
+      "1_day": {
+        "mae": 18.137562499999998,
+        "mae_std": 19.704662192177068,
+        "samples": 751
+      },
+      "5_day": {
+        "mae": 661.5577,
+        "mae_std": 683.0594260503248,
+        "samples": 751
+      },
+      "30_day": {
+        "mae": 10976.4036984375,
+        "mae_std": 18150.69335089955,
+        "samples": 751
+      }
+    },
+    "trained_at": "2026-02-02T23:02:43.373922"
+  },
+  "POWERGRID": {
+    "status": "success",
+    "data_points": 781,
+    "validation_scores": {
+      "1_day": {
+        "mae": 1.2466937255859374,
+        "mae_std": 2.2324189647409907,
+        "samples": 751
+      },
+      "5_day": {
+        "mae": 0.9140321304321288,
+        "mae_std": 1.7222670119131982,
+        "samples": 751
+      },
+      "30_day": {
+        "mae": 4.722673945617676,
+        "mae_std": 7.755555132904142,
+        "samples": 751
+      }
+    },
+    "trained_at": "2026-02-02T23:02:49.439963"
+  },
+  "COALINDIA": {
+    "status": "success",
+    "data_points": 781,
+    "validation_scores": {
+      "1_day": {
+        "mae": 3.2143375,
+        "mae_std": 3.8615878284958773,
+        "samples": 751
+      },
+      "5_day": {
+        "mae": 520.36375,
+        "mae_std": 675.2101656737469,
+        "samples": 751
+      },
+      "30_day": {
+        "mae": 813.9457,
+        "mae_std": 1010.7391579209568,
+        "samples": 751
+      }
+    },
+    "trained_at": "2026-02-02T23:02:53.652249"
+  },
+  "BPCL": {
+    "status": "success",
+    "data_points": 781,
+    "validation_scores": {
+      "1_day": {
+        "mae": 50.566,
+        "mae_std": 95.8963964525486,
+        "samples": 751
+      },
+      "5_day": {
+        "mae": 450.4259,
+        "mae_std": 631.4126165911051,
+        "samples": 751
+      },
+      "30_day": {
+        "mae": 1105.6658750000001,
+        "mae_std": 1425.9429821106505,
+        "samples": 751
+      }
+    },
+    "trained_at": "2026-02-02T23:02:57.667183"
+  },
+  "ONGC": {
+    "status": "success",
+    "data_points": 781,
+    "validation_scores": {
+      "1_day": {
+        "mae": 174.9818407567139,
+        "mae_std": 328.4545082280811,
+        "samples": 751
+      },
+      "5_day": {
+        "mae": 162.07878721582034,
+        "mae_std": 308.9065329129326,
+        "samples": 751
+      },
+      "30_day": {
+        "mae": 68.35874686584472,
+        "mae_std": 135.85872523835502,
+        "samples": 751
+      }
+    },
+    "trained_at": "2026-02-02T23:03:03.745136"
+  },
+  "JSWSTEEL": {
+    "status": "success",
+    "data_points": 781,
+    "validation_scores": {
+      "1_day": {
+        "mae": 143.23989999999998,
+        "mae_std": 141.45200554319874,
+        "samples": 751
+      },
+      "5_day": {
+        "mae": 802.5280875000001,
+        "mae_std": 849.6374908889237,
+        "samples": 751
+      },
+      "30_day": {
+        "mae": 1323.303925,
+        "mae_std": 1082.2782711571813,
+        "samples": 751
+      }
+    },
+    "trained_at": "2026-02-02T23:03:08.425037"
+  },
+  "DIVISLAB": {
+    "status": "success",
+    "data_points": 781,
+    "validation_scores": {
+      "1_day": {
+        "mae": 0.5484813949584961,
+        "mae_std": 0.769366672017617,
+        "samples": 751
+      },
+      "5_day": {
+        "mae": 0.47136205749511717,
+        "mae_std": 0.7748235575292347,
+        "samples": 751
+      },
+      "30_day": {
+        "mae": 0.28586130828857426,
+        "mae_std": 0.44968340519463385,
+        "samples": 751
+      }
+    },
+    "trained_at": "2026-02-02T23:03:14.653471"
+  },
+  "DRREDDY": {
+    "status": "success",
+    "data_points": 781,
+    "validation_scores": {
+      "1_day": {
+        "mae": 1.3551094039916993,
+        "mae_std": 2.5621843885052096,
+        "samples": 751
+      },
+      "5_day": {
+        "mae": 1.4891096603393552,
+        "mae_std": 2.5093105433387874,
+        "samples": 751
+      },
+      "30_day": {
+        "mae": 0.9266046249389648,
+        "mae_std": 1.3350301728147935,
+        "samples": 751
+      }
+    },
+    "trained_at": "2026-02-02T23:03:20.244490"
+  }
+}

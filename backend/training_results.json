@@ -1,0 +1,152 @@
+{
+  "RELIANCE": {
+    "status": "success",
+    "data_points": 781,
+    "trained_at": "2026-02-02T22:33:41.298086"
+  },
+  "TCS": {
+    "status": "success",
+    "data_points": 781,
+    "trained_at": "2026-02-02T22:33:41.585500"
+  },
+  "HDFCBANK": {
+    "status": "success",
+    "data_points": 781,
+    "trained_at": "2026-02-02T22:33:41.923266"
+  },
+  "INFY": {
+    "status": "success",
+    "data_points": 781,
+    "trained_at": "2026-02-02T22:33:42.185722"
+  },
+  "ICICIBANK": {
+    "status": "success",
+    "data_points": 781,
+    "trained_at": "2026-02-02T22:33:42.434747"
+  },
+  "HINDUNILVR": {
+    "status": "success",
+    "data_points": 781,
+    "trained_at": "2026-02-02T22:33:42.742665"
+  },
+  "SBIN": {
+    "status": "success",
+    "data_points": 781,
+    "trained_at": "2026-02-02T22:33:43.036737"
+  },
+  "BAJFINANCE": {
+    "status": "success",
+    "data_points": 781,
+    "trained_at": "2026-02-02T22:33:43.313315"
+  },
+  "BHARTIARTL": {
+    "status": "success",
+    "data_points": 781,
+    "trained_at": "2026-02-02T22:33:43.613941"
+  },
+  "KOTAKBANK": {
+    "status": "success",
+    "data_points": 781,
+    "trained_at": "2026-02-02T22:33:43.905656"
+  },
+  "WIPRO": {
+    "status": "success",
+    "data_points": 781,
+    "trained_at": "2026-02-02T22:33:44.223099"
+  },
+  "AXISBANK": {
+    "status": "success",
+    "data_points": 781,
+    "trained_at": "2026-02-02T22:33:44.500516"
+  },
+  "ITC": {
+    "status": "success",
+    "data_points": 781,
+    "trained_at": "2026-02-02T22:33:44.839165"
+  },
+  "HCLTECH": {
+    "status": "success",
+    "data_points": 781,
+    "trained_at": "2026-02-02T22:33:45.080725"
+  },
+  "ASIANPAINT": {
+    "status": "success",
+    "data_points": 781,
+    "trained_at": "2026-02-02T22:33:45.323522"
+  },
+  "MARUTI": {
+    "status": "success",
+    "data_points": 781,
+    "trained_at": "2026-02-02T22:33:45.613244"
+  },
+  "TATAMOTORS": {
+    "status": "success",
+    "data_points": 781,
+    "trained_at": "2026-02-02T22:33:45.897122"
+  },
+  "SUNPHARMA": {
+    "status": "success",
+    "data_points": 781,
+    "trained_at": "2026-02-02T22:33:46.136757"
+  },
+  "TITAN": {
+    "status": "success",
+    "data_points": 781,
+    "trained_at": "2026-02-02T22:33:46.479947"
+  },
+  "NTPC": {
+    "status": "success",
+    "data_points": 781,
+    "trained_at": "2026-02-02T22:33:46.730542"
+  },
+  "ULTRACEMCO": {
+    "status": "success",
+    "data_points": 781,
+    "trained_at": "2026-02-02T22:33:46.985481"
+  },
+  "TECHM": {
+    "status": "success",
+    "data_points": 781,
+    "trained_at": "2026-02-02T22:33:47.240414"
+  },
+  "GRASIM": {
+    "status": "success",
+    "data_points": 781,
+    "trained_at": "2026-02-02T22:33:47.498856"
+  },
+  "POWERGRID": {
+    "status": "success",
+    "data_points": 781,
+    "trained_at": "2026-02-02T22:33:47.798364"
+  },
+  "COALINDIA": {
+    "status": "success",
+    "data_points": 781,
+    "trained_at": "2026-02-02T22:33:48.082316"
+  },
+  "BPCL": {
+    "status": "success",
+    "data_points": 781,
+    "trained_at": "2026-02-02T22:33:48.331657"
+  },
+  "ONGC": {
+    "status": "success",
+    "data_points": 781,
+    "trained_at": "2026-02-02T22:33:48.722667"
+  },
+  "JSWSTEEL": {
+    "status": "success",
+    "data_points": 781,
+    "trained_at": "2026-02-02T22:33:48.979015"
+  },
+  "DIVISLAB": {
+    "status": "success",
+    "data_points": 781,
+    "trained_at": "2026-02-02T22:33:49.253397"
+  },
+  "DRREDDY": {
+    "status": "success",
+    "data_points": 781,
+    "trained_at": "2026-02-02T22:33:49.548396"
+  }
+}

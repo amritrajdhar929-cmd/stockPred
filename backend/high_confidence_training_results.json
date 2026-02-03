@@ -1,0 +1,152 @@
+{
+  "RELIANCE": {
+    "status": "failed",
+    "error": "Training failed",
+    "trained_at": "2026-02-02T23:15:08.790604"
+  },
+  "TCS": {
+    "status": "failed",
+    "error": "Training failed",
+    "trained_at": "2026-02-02T23:15:08.809077"
+  },
+  "HDFCBANK": {
+    "status": "failed",
+    "error": "Training failed",
+    "trained_at": "2026-02-02T23:15:08.826354"
+  },
+  "INFY": {
+    "status": "failed",
+    "error": "Training failed",
+    "trained_at": "2026-02-02T23:15:08.843222"
+  },
+  "ICICIBANK": {
+    "status": "failed",
+    "error": "Training failed",
+    "trained_at": "2026-02-02T23:15:08.860774"
+  },
+  "HINDUNILVR": {
+    "status": "failed",
+    "error": "Training failed",
+    "trained_at": "2026-02-02T23:15:08.878025"
+  },
+  "SBIN": {
+    "status": "failed",
+    "error": "Training failed",
+    "trained_at": "2026-02-02T23:15:08.894792"
+  },
+  "BAJFINANCE": {
+    "status": "failed",
+    "error": "Training failed",
+    "trained_at": "2026-02-02T23:15:08.912757"
+  },
+  "BHARTIARTL": {
+    "status": "failed",
+    "error": "Training failed",
+    "trained_at": "2026-02-02T23:15:08.930691"
+  },
+  "KOTAKBANK": {
+    "status": "failed",
+    "error": "Training failed",
+    "trained_at": "2026-02-02T23:15:08.948454"
+  },
+  "WIPRO": {
+    "status": "failed",
+    "error": "Training failed",
+    "trained_at": "2026-02-02T23:15:08.965375"
+  },
+  "AXISBANK": {
+    "status": "failed",
+    "error": "Training failed",
+    "trained_at": "2026-02-02T23:15:08.982546"
+  },
+  "ITC": {
+    "status": "failed",
+    "error": "Training failed",
+    "trained_at": "2026-02-02T23:15:08.999488"
+  },
+  "HCLTECH": {
+    "status": "failed",
+    "error": "Training failed",
+    "trained_at": "2026-02-02T23:15:09.016728"
+  },
+  "ASIANPAINT": {
+    "status": "failed",
+    "error": "Training failed",
+    "trained_at": "2026-02-02T23:15:09.034339"
+  },
+  "MARUTI": {
+    "status": "failed",
+    "error": "Training failed",
+    "trained_at": "2026-02-02T23:15:09.051706"
+  },
+  "TATAMOTORS": {
+    "status": "failed",
+    "error": "Training failed",
+    "trained_at": "2026-02-02T23:15:09.068709"
+  },
+  "SUNPHARMA": {
+    "status": "failed",
+    "error": "Training failed",
+    "trained_at": "2026-02-02T23:15:09.086139"
+  },
+  "TITAN": {
+    "status": "failed",
+    "error": "Training failed",
+    "trained_at": "2026-02-02T23:15:09.102956"
+  },
+  "NTPC": {
+    "status": "failed",
+    "error": "Training failed",
+    "trained_at": "2026-02-02T23:15:09.119979"
+  },
+  "ULTRACEMCO": {
+    "status": "failed",
+    "error": "Training failed",
+    "trained_at": "2026-02-02T23:15:09.137151"
+  },
+  "TECHM": {
+    "status": "failed",
+    "error": "Training failed",
+    "trained_at": "2026-02-02T23:15:09.154318"
+  },
+  "GRASIM": {
+    "status": "failed",
+    "error": "Training failed",
+    "trained_at": "2026-02-02T23:15:09.171180"
+  },
+  "POWERGRID": {
+    "status": "failed",
+    "error": "Training failed",
+    "trained_at": "2026-02-02T23:15:09.187783"
+  },
+  "COALINDIA": {
+    "status": "failed",
+    "error": "Training failed",
+    "trained_at": "2026-02-02T23:15:09.204380"
+  },
+  "BPCL": {
+    "status": "failed",
+    "error": "Training failed",
+    "trained_at": "2026-02-02T23:15:09.221700"
+  },
+  "ONGC": {
+    "status": "failed",
+    "error": "Training failed",
+    "trained_at": "2026-02-02T23:15:09.238460"
+  },
+  "JSWSTEEL": {
+    "status": "failed",
+    "error": "Training failed",
+    "trained_at": "2026-02-02T23:15:09.255164"
+  },
+  "DIVISLAB": {
+    "status": "failed",
+    "error": "Training failed",
+    "trained_at": "2026-02-02T23:15:09.272306"
+  },
+  "DRREDDY": {
+    "status": "failed",
+    "error": "Training failed",
+    "trained_at": "2026-02-02T23:15:09.294743"
+  }
+}

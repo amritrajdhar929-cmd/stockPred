@@ -1,0 +1,3419 @@
+{
+  "ASIANPAINT": {
+    "status": "success",
+    "data_points": 781,
+    "validation_scores": {
+      "1_day": {
+        "mae": 1091.9998022249488,
+        "mae_std": 915.9815811002696,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 116
+      },
+      "5_day": {
+        "mae": 2653.168295494569,
+        "mae_std": 2427.5768280920215,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 116
+      },
+      "30_day": {
+        "mae": 5236.729771812903,
+        "mae_std": 4816.469214520904,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 116
+      }
+    },
+    "model_weights": {
+      "1_day": 0.05045787554038323,
+      "5_day": 0.050188453932854774,
+      "30_day": 0.05009547943500843
+    },
+    "config": {
+      "prediction_timeframes": [
+        1,
+        5,
+        30
+      ],
+      "min_confidence_thresholds": {
+        "1_day": 82,
+        "5_day": 80,
+        "30_day": 78
+      },
+      "max_confidence_thresholds": {
+        "1_day": 95,
+        "5_day": 92,
+        "30_day": 90
+      },
+      "ensemble_models": [
+        "xgb",
+        "rf",
+        "gb"
+      ],
+      "feature_periods": {
+        "returns": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10,
+          14,
+          21,
+          30
+        ],
+        "ma": [
+          5,
+          10,
+          20,
+          50
+        ],
+        "volatility": [
+          5,
+          10,
+          20,
+          30
+        ],
+        "volume": [
+          5,
+          10,
+          20
+        ],
+        "lags": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10
+        ]
+      },
+      "model_params": {
+        "xgb": {
+          "n_estimators": 300,
+          "max_depth": 8,
+          "learning_rate": 0.03,
+          "subsample": 0.9,
+          "colsample_bytree": 0.9,
+          "reg_alpha": 0.1,
+          "reg_lambda": 1.0,
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "rf": {
+          "n_estimators": 200,
+          "max_depth": 15,
+          "min_samples_split": 5,
+          "min_samples_leaf": 2,
+          "max_features": "sqrt",
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "gb": {
+          "n_estimators": 200,
+          "max_depth": 6,
+          "learning_rate": 0.05,
+          "subsample": 0.8,
+          "max_features": "sqrt",
+          "random_state": 42
+        }
+      }
+    },
+    "trained_at": "2026-02-02T23:22:47.849359"
+  },
+  "AXISBANK": {
+    "status": "success",
+    "data_points": 781,
+    "validation_scores": {
+      "1_day": {
+        "mae": 28.34064018815485,
+        "mae_std": 30.470293304924816,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 116
+      },
+      "5_day": {
+        "mae": 29.382644999666656,
+        "mae_std": 32.007356456248765,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 116
+      },
+      "30_day": {
+        "mae": 20.61000280420658,
+        "mae_std": 25.469803471640915,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 116
+      }
+    },
+    "model_weights": {
+      "1_day": 0.06764250839211705,
+      "5_day": 0.06701684729161807,
+      "30_day": 0.07426006345025264
+    },
+    "config": {
+      "prediction_timeframes": [
+        1,
+        5,
+        30
+      ],
+      "min_confidence_thresholds": {
+        "1_day": 82,
+        "5_day": 80,
+        "30_day": 78
+      },
+      "max_confidence_thresholds": {
+        "1_day": 95,
+        "5_day": 92,
+        "30_day": 90
+      },
+      "ensemble_models": [
+        "xgb",
+        "rf",
+        "gb"
+      ],
+      "feature_periods": {
+        "returns": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10,
+          14,
+          21,
+          30
+        ],
+        "ma": [
+          5,
+          10,
+          20,
+          50
+        ],
+        "volatility": [
+          5,
+          10,
+          20,
+          30
+        ],
+        "volume": [
+          5,
+          10,
+          20
+        ],
+        "lags": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10
+        ]
+      },
+      "model_params": {
+        "xgb": {
+          "n_estimators": 300,
+          "max_depth": 8,
+          "learning_rate": 0.03,
+          "subsample": 0.9,
+          "colsample_bytree": 0.9,
+          "reg_alpha": 0.1,
+          "reg_lambda": 1.0,
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "rf": {
+          "n_estimators": 200,
+          "max_depth": 15,
+          "min_samples_split": 5,
+          "min_samples_leaf": 2,
+          "max_features": "sqrt",
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "gb": {
+          "n_estimators": 200,
+          "max_depth": 6,
+          "learning_rate": 0.05,
+          "subsample": 0.8,
+          "max_features": "sqrt",
+          "random_state": 42
+        }
+      }
+    },
+    "trained_at": "2026-02-02T23:23:20.824950"
+  },
+  "BAJFINANCE": {
+    "status": "success",
+    "data_points": 781,
+    "validation_scores": {
+      "1_day": {
+        "mae": 57.36180196456456,
+        "mae_std": 61.16991114354978,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 116
+      },
+      "5_day": {
+        "mae": 60.318941364475656,
+        "mae_std": 61.104492733201084,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 116
+      },
+      "30_day": {
+        "mae": 28.541935484269782,
+        "mae_std": 31.896400829476825,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 116
+      }
+    },
+    "model_weights": {
+      "1_day": 0.05871660188765121,
+      "5_day": 0.05828927001038518,
+      "30_day": 0.06751808256862891
+    },
+    "config": {
+      "prediction_timeframes": [
+        1,
+        5,
+        30
+      ],
+      "min_confidence_thresholds": {
+        "1_day": 82,
+        "5_day": 80,
+        "30_day": 78
+      },
+      "max_confidence_thresholds": {
+        "1_day": 95,
+        "5_day": 92,
+        "30_day": 90
+      },
+      "ensemble_models": [
+        "xgb",
+        "rf",
+        "gb"
+      ],
+      "feature_periods": {
+        "returns": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10,
+          14,
+          21,
+          30
+        ],
+        "ma": [
+          5,
+          10,
+          20,
+          50
+        ],
+        "volatility": [
+          5,
+          10,
+          20,
+          30
+        ],
+        "volume": [
+          5,
+          10,
+          20
+        ],
+        "lags": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10
+        ]
+      },
+      "model_params": {
+        "xgb": {
+          "n_estimators": 300,
+          "max_depth": 8,
+          "learning_rate": 0.03,
+          "subsample": 0.9,
+          "colsample_bytree": 0.9,
+          "reg_alpha": 0.1,
+          "reg_lambda": 1.0,
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "rf": {
+          "n_estimators": 200,
+          "max_depth": 15,
+          "min_samples_split": 5,
+          "min_samples_leaf": 2,
+          "max_features": "sqrt",
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "gb": {
+          "n_estimators": 200,
+          "max_depth": 6,
+          "learning_rate": 0.05,
+          "subsample": 0.8,
+          "max_features": "sqrt",
+          "random_state": 42
+        }
+      }
+    },
+    "trained_at": "2026-02-02T23:23:57.390815"
+  },
+  "BHARTIARTL": {
+    "status": "success",
+    "data_points": 781,
+    "validation_scores": {
+      "1_day": {
+        "mae": 3145.1745211033262,
+        "mae_std": 4365.935666718732,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 116
+      },
+      "5_day": {
+        "mae": 4826.414901684267,
+        "mae_std": 4947.5958581285595,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 116
+      },
+      "30_day": {
+        "mae": 4869.143450888843,
+        "mae_std": 4394.299187225009,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 116
+      }
+    },
+    "model_weights": {
+      "1_day": 0.05015897369016764,
+      "5_day": 0.05010359656392614,
+      "30_day": 0.05010268746545269
+    },
+    "config": {
+      "prediction_timeframes": [
+        1,
+        5,
+        30
+      ],
+      "min_confidence_thresholds": {
+        "1_day": 82,
+        "5_day": 80,
+        "30_day": 78
+      },
+      "max_confidence_thresholds": {
+        "1_day": 95,
+        "5_day": 92,
+        "30_day": 90
+      },
+      "ensemble_models": [
+        "xgb",
+        "rf",
+        "gb"
+      ],
+      "feature_periods": {
+        "returns": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10,
+          14,
+          21,
+          30
+        ],
+        "ma": [
+          5,
+          10,
+          20,
+          50
+        ],
+        "volatility": [
+          5,
+          10,
+          20,
+          30
+        ],
+        "volume": [
+          5,
+          10,
+          20
+        ],
+        "lags": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10
+        ]
+      },
+      "model_params": {
+        "xgb": {
+          "n_estimators": 300,
+          "max_depth": 8,
+          "learning_rate": 0.03,
+          "subsample": 0.9,
+          "colsample_bytree": 0.9,
+          "reg_alpha": 0.1,
+          "reg_lambda": 1.0,
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "rf": {
+          "n_estimators": 200,
+          "max_depth": 15,
+          "min_samples_split": 5,
+          "min_samples_leaf": 2,
+          "max_features": "sqrt",
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "gb": {
+          "n_estimators": 200,
+          "max_depth": 6,
+          "learning_rate": 0.05,
+          "subsample": 0.8,
+          "max_features": "sqrt",
+          "random_state": 42
+        }
+      }
+    },
+    "trained_at": "2026-02-02T23:24:22.408139"
+  },
+  "BPCL": {
+    "status": "success",
+    "data_points": 781,
+    "validation_scores": {
+      "1_day": {
+        "mae": 1969.9571455700413,
+        "mae_std": 2787.8324942504673,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 116
+      },
+      "5_day": {
+        "mae": 3177.5253886643304,
+        "mae_std": 3650.6118556702872,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 116
+      },
+      "30_day": {
+        "mae": 3809.8898643628663,
+        "mae_std": 4352.00617487059,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 116
+      }
+    },
+    "model_weights": {
+      "1_day": 0.05025381262778765,
+      "5_day": 0.050157355154934836,
+      "30_day": 0.050131237389444167
+    },
+    "config": {
+      "prediction_timeframes": [
+        1,
+        5,
+        30
+      ],
+      "min_confidence_thresholds": {
+        "1_day": 82,
+        "5_day": 80,
+        "30_day": 78
+      },
+      "max_confidence_thresholds": {
+        "1_day": 95,
+        "5_day": 92,
+        "30_day": 90
+      },
+      "ensemble_models": [
+        "xgb",
+        "rf",
+        "gb"
+      ],
+      "feature_periods": {
+        "returns": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10,
+          14,
+          21,
+          30
+        ],
+        "ma": [
+          5,
+          10,
+          20,
+          50
+        ],
+        "volatility": [
+          5,
+          10,
+          20,
+          30
+        ],
+        "volume": [
+          5,
+          10,
+          20
+        ],
+        "lags": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10
+        ]
+      },
+      "model_params": {
+        "xgb": {
+          "n_estimators": 300,
+          "max_depth": 8,
+          "learning_rate": 0.03,
+          "subsample": 0.9,
+          "colsample_bytree": 0.9,
+          "reg_alpha": 0.1,
+          "reg_lambda": 1.0,
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "rf": {
+          "n_estimators": 200,
+          "max_depth": 15,
+          "min_samples_split": 5,
+          "min_samples_leaf": 2,
+          "max_features": "sqrt",
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "gb": {
+          "n_estimators": 200,
+          "max_depth": 6,
+          "learning_rate": 0.05,
+          "subsample": 0.8,
+          "max_features": "sqrt",
+          "random_state": 42
+        }
+      }
+    },
+    "trained_at": "2026-02-02T23:24:47.990468"
+  },
+  "COALINDIA": {
+    "status": "success",
+    "data_points": 781,
+    "validation_scores": {
+      "1_day": {
+        "mae": 1062.0478790806596,
+        "mae_std": 957.9283218293468,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 116
+      },
+      "5_day": {
+        "mae": 2635.6927530802163,
+        "mae_std": 2980.122612699839,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 116
+      },
+      "30_day": {
+        "mae": 4835.543007160572,
+        "mae_std": 4117.986966649613,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 116
+      }
+    },
+    "model_weights": {
+      "1_day": 0.05047078856742507,
+      "5_day": 0.05018970344674127,
+      "30_day": 0.050103401003601084
+    },
+    "config": {
+      "prediction_timeframes": [
+        1,
+        5,
+        30
+      ],
+      "min_confidence_thresholds": {
+        "1_day": 82,
+        "5_day": 80,
+        "30_day": 78
+      },
+      "max_confidence_thresholds": {
+        "1_day": 95,
+        "5_day": 92,
+        "30_day": 90
+      },
+      "ensemble_models": [
+        "xgb",
+        "rf",
+        "gb"
+      ],
+      "feature_periods": {
+        "returns": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10,
+          14,
+          21,
+          30
+        ],
+        "ma": [
+          5,
+          10,
+          20,
+          50
+        ],
+        "volatility": [
+          5,
+          10,
+          20,
+          30
+        ],
+        "volume": [
+          5,
+          10,
+          20
+        ],
+        "lags": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10
+        ]
+      },
+      "model_params": {
+        "xgb": {
+          "n_estimators": 300,
+          "max_depth": 8,
+          "learning_rate": 0.03,
+          "subsample": 0.9,
+          "colsample_bytree": 0.9,
+          "reg_alpha": 0.1,
+          "reg_lambda": 1.0,
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "rf": {
+          "n_estimators": 200,
+          "max_depth": 15,
+          "min_samples_split": 5,
+          "min_samples_leaf": 2,
+          "max_features": "sqrt",
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "gb": {
+          "n_estimators": 200,
+          "max_depth": 6,
+          "learning_rate": 0.05,
+          "subsample": 0.8,
+          "max_features": "sqrt",
+          "random_state": 42
+        }
+      }
+    },
+    "trained_at": "2026-02-02T23:25:12.525405"
+  },
+  "DIVISLAB": {
+    "status": "success",
+    "data_points": 781,
+    "validation_scores": {
+      "1_day": {
+        "mae": 25.56563042842793,
+        "mae_std": 27.631377519733125,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 116
+      },
+      "5_day": {
+        "mae": 25.973996352000192,
+        "mae_std": 25.77653109563483,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 116
+      },
+      "30_day": {
+        "mae": 12.649769763496876,
+        "mae_std": 13.710745530683617,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 116
+      }
+    },
+    "model_weights": {
+      "1_day": 0.06955750638898833,
+      "5_day": 0.06925002121252223,
+      "30_day": 0.08952640797593245
+    },
+    "config": {
+      "prediction_timeframes": [
+        1,
+        5,
+        30
+      ],
+      "min_confidence_thresholds": {
+        "1_day": 82,
+        "5_day": 80,
+        "30_day": 78
+      },
+      "max_confidence_thresholds": {
+        "1_day": 95,
+        "5_day": 92,
+        "30_day": 90
+      },
+      "ensemble_models": [
+        "xgb",
+        "rf",
+        "gb"
+      ],
+      "feature_periods": {
+        "returns": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10,
+          14,
+          21,
+          30
+        ],
+        "ma": [
+          5,
+          10,
+          20,
+          50
+        ],
+        "volatility": [
+          5,
+          10,
+          20,
+          30
+        ],
+        "volume": [
+          5,
+          10,
+          20
+        ],
+        "lags": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10
+        ]
+      },
+      "model_params": {
+        "xgb": {
+          "n_estimators": 300,
+          "max_depth": 8,
+          "learning_rate": 0.03,
+          "subsample": 0.9,
+          "colsample_bytree": 0.9,
+          "reg_alpha": 0.1,
+          "reg_lambda": 1.0,
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "rf": {
+          "n_estimators": 200,
+          "max_depth": 15,
+          "min_samples_split": 5,
+          "min_samples_leaf": 2,
+          "max_features": "sqrt",
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "gb": {
+          "n_estimators": 200,
+          "max_depth": 6,
+          "learning_rate": 0.05,
+          "subsample": 0.8,
+          "max_features": "sqrt",
+          "random_state": 42
+        }
+      }
+    },
+    "trained_at": "2026-02-02T23:25:46.845718"
+  },
+  "DRREDDY": {
+    "status": "failed",
+    "error": "Training failed",
+    "trained_at": "2026-02-02T23:25:46.904013"
+  },
+  "GRASIM": {
+    "status": "success",
+    "data_points": 781,
+    "validation_scores": {
+      "1_day": {
+        "mae": 1567.8455537370933,
+        "mae_std": 1911.506169160858,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 116
+      },
+      "5_day": {
+        "mae": 2431.8363714418265,
+        "mae_std": 2229.371581919716,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 116
+      },
+      "30_day": {
+        "mae": 12738.810632566512,
+        "mae_std": 16186.613118332434,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 116
+      }
+    },
+    "model_weights": {
+      "1_day": 0.05031890896299658,
+      "5_day": 0.050205605938650366,
+      "30_day": 0.0500392501320871
+    },
+    "config": {
+      "prediction_timeframes": [
+        1,
+        5,
+        30
+      ],
+      "min_confidence_thresholds": {
+        "1_day": 82,
+        "5_day": 80,
+        "30_day": 78
+      },
+      "max_confidence_thresholds": {
+        "1_day": 95,
+        "5_day": 92,
+        "30_day": 90
+      },
+      "ensemble_models": [
+        "xgb",
+        "rf",
+        "gb"
+      ],
+      "feature_periods": {
+        "returns": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10,
+          14,
+          21,
+          30
+        ],
+        "ma": [
+          5,
+          10,
+          20,
+          50
+        ],
+        "volatility": [
+          5,
+          10,
+          20,
+          30
+        ],
+        "volume": [
+          5,
+          10,
+          20
+        ],
+        "lags": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10
+        ]
+      },
+      "model_params": {
+        "xgb": {
+          "n_estimators": 300,
+          "max_depth": 8,
+          "learning_rate": 0.03,
+          "subsample": 0.9,
+          "colsample_bytree": 0.9,
+          "reg_alpha": 0.1,
+          "reg_lambda": 1.0,
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "rf": {
+          "n_estimators": 200,
+          "max_depth": 15,
+          "min_samples_split": 5,
+          "min_samples_leaf": 2,
+          "max_features": "sqrt",
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "gb": {
+          "n_estimators": 200,
+          "max_depth": 6,
+          "learning_rate": 0.05,
+          "subsample": 0.8,
+          "max_features": "sqrt",
+          "random_state": 42
+        }
+      }
+    },
+    "trained_at": "2026-02-02T23:26:13.326768"
+  },
+  "HCLTECH": {
+    "status": "success",
+    "data_points": 781,
+    "validation_scores": {
+      "1_day": {
+        "mae": 1063.1134666868109,
+        "mae_std": 1017.2303614473554,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 116
+      },
+      "5_day": {
+        "mae": 2429.9687762219137,
+        "mae_std": 2434.667808397923,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 116
+      },
+      "30_day": {
+        "mae": 4890.825454749722,
+        "mae_std": 4474.917885613872,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 116
+      }
+    },
+    "model_weights": {
+      "1_day": 0.050470316683211565,
+      "5_day": 0.050205763960708846,
+      "30_day": 0.050102232231455365
+    },
+    "config": {
+      "prediction_timeframes": [
+        1,
+        5,
+        30
+      ],
+      "min_confidence_thresholds": {
+        "1_day": 82,
+        "5_day": 80,
+        "30_day": 78
+      },
+      "max_confidence_thresholds": {
+        "1_day": 95,
+        "5_day": 92,
+        "30_day": 90
+      },
+      "ensemble_models": [
+        "xgb",
+        "rf",
+        "gb"
+      ],
+      "feature_periods": {
+        "returns": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10,
+          14,
+          21,
+          30
+        ],
+        "ma": [
+          5,
+          10,
+          20,
+          50
+        ],
+        "volatility": [
+          5,
+          10,
+          20,
+          30
+        ],
+        "volume": [
+          5,
+          10,
+          20
+        ],
+        "lags": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10
+        ]
+      },
+      "model_params": {
+        "xgb": {
+          "n_estimators": 300,
+          "max_depth": 8,
+          "learning_rate": 0.03,
+          "subsample": 0.9,
+          "colsample_bytree": 0.9,
+          "reg_alpha": 0.1,
+          "reg_lambda": 1.0,
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "rf": {
+          "n_estimators": 200,
+          "max_depth": 15,
+          "min_samples_split": 5,
+          "min_samples_leaf": 2,
+          "max_features": "sqrt",
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "gb": {
+          "n_estimators": 200,
+          "max_depth": 6,
+          "learning_rate": 0.05,
+          "subsample": 0.8,
+          "max_features": "sqrt",
+          "random_state": 42
+        }
+      }
+    },
+    "trained_at": "2026-02-02T23:26:39.102787"
+  },
+  "HDFCBANK": {
+    "status": "success",
+    "data_points": 781,
+    "validation_scores": {
+      "1_day": {
+        "mae": 110.70319439864593,
+        "mae_std": 135.75336017224876,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 116
+      },
+      "5_day": {
+        "mae": 111.37457424754507,
+        "mae_std": 139.28836453751944,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 116
+      },
+      "30_day": {
+        "mae": 108.71924510650555,
+        "mae_std": 92.67278908242393,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 116
+      }
+    },
+    "model_weights": {
+      "1_day": 0.05451658146090078,
+      "5_day": 0.0544893549437893,
+      "30_day": 0.0545990017214632
+    },
+    "config": {
+      "prediction_timeframes": [
+        1,
+        5,
+        30
+      ],
+      "min_confidence_thresholds": {
+        "1_day": 82,
+        "5_day": 80,
+        "30_day": 78
+      },
+      "max_confidence_thresholds": {
+        "1_day": 95,
+        "5_day": 92,
+        "30_day": 90
+      },
+      "ensemble_models": [
+        "xgb",
+        "rf",
+        "gb"
+      ],
+      "feature_periods": {
+        "returns": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10,
+          14,
+          21,
+          30
+        ],
+        "ma": [
+          5,
+          10,
+          20,
+          50
+        ],
+        "volatility": [
+          5,
+          10,
+          20,
+          30
+        ],
+        "volume": [
+          5,
+          10,
+          20
+        ],
+        "lags": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10
+        ]
+      },
+      "model_params": {
+        "xgb": {
+          "n_estimators": 300,
+          "max_depth": 8,
+          "learning_rate": 0.03,
+          "subsample": 0.9,
+          "colsample_bytree": 0.9,
+          "reg_alpha": 0.1,
+          "reg_lambda": 1.0,
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "rf": {
+          "n_estimators": 200,
+          "max_depth": 15,
+          "min_samples_split": 5,
+          "min_samples_leaf": 2,
+          "max_features": "sqrt",
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "gb": {
+          "n_estimators": 200,
+          "max_depth": 6,
+          "learning_rate": 0.05,
+          "subsample": 0.8,
+          "max_features": "sqrt",
+          "random_state": 42
+        }
+      }
+    },
+    "trained_at": "2026-02-02T23:27:17.746739"
+  },
+  "HINDUNILVR": {
+    "status": "success",
+    "data_points": 781,
+    "validation_scores": {
+      "1_day": {
+        "mae": 129.17289682348112,
+        "mae_std": 214.22051322450824,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 116
+      },
+      "5_day": {
+        "mae": 115.27594110752469,
+        "mae_std": 187.21761287687062,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 116
+      },
+      "30_day": {
+        "mae": 84.3364507269739,
+        "mae_std": 106.10152818359215,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 116
+      }
+    },
+    "model_weights": {
+      "1_day": 0.05387078101076022,
+      "5_day": 0.05433741846614987,
+      "30_day": 0.055928634531823465
+    },
+    "config": {
+      "prediction_timeframes": [
+        1,
+        5,
+        30
+      ],
+      "min_confidence_thresholds": {
+        "1_day": 82,
+        "5_day": 80,
+        "30_day": 78
+      },
+      "max_confidence_thresholds": {
+        "1_day": 95,
+        "5_day": 92,
+        "30_day": 90
+      },
+      "ensemble_models": [
+        "xgb",
+        "rf",
+        "gb"
+      ],
+      "feature_periods": {
+        "returns": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10,
+          14,
+          21,
+          30
+        ],
+        "ma": [
+          5,
+          10,
+          20,
+          50
+        ],
+        "volatility": [
+          5,
+          10,
+          20,
+          30
+        ],
+        "volume": [
+          5,
+          10,
+          20
+        ],
+        "lags": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10
+        ]
+      },
+      "model_params": {
+        "xgb": {
+          "n_estimators": 300,
+          "max_depth": 8,
+          "learning_rate": 0.03,
+          "subsample": 0.9,
+          "colsample_bytree": 0.9,
+          "reg_alpha": 0.1,
+          "reg_lambda": 1.0,
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "rf": {
+          "n_estimators": 200,
+          "max_depth": 15,
+          "min_samples_split": 5,
+          "min_samples_leaf": 2,
+          "max_features": "sqrt",
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "gb": {
+          "n_estimators": 200,
+          "max_depth": 6,
+          "learning_rate": 0.05,
+          "subsample": 0.8,
+          "max_features": "sqrt",
+          "random_state": 42
+        }
+      }
+    },
+    "trained_at": "2026-02-02T23:27:59.483509"
+  },
+  "ICICIBANK": {
+    "status": "success",
+    "data_points": 781,
+    "validation_scores": {
+      "1_day": {
+        "mae": 1211.2529283121958,
+        "mae_std": 1208.356368131222,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 116
+      },
+      "5_day": {
+        "mae": 2516.0202286626472,
+        "mae_std": 2330.0004777030454,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 116
+      },
+      "30_day": {
+        "mae": 5234.560380997844,
+        "mae_std": 6794.1153917566735,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 116
+      }
+    },
+    "model_weights": {
+      "1_day": 0.050412795699312715,
+      "5_day": 0.05019872654206244,
+      "30_day": 0.050095519005133565
+    },
+    "config": {
+      "prediction_timeframes": [
+        1,
+        5,
+        30
+      ],
+      "min_confidence_thresholds": {
+        "1_day": 82,
+        "5_day": 80,
+        "30_day": 78
+      },
+      "max_confidence_thresholds": {
+        "1_day": 95,
+        "5_day": 92,
+        "30_day": 90
+      },
+      "ensemble_models": [
+        "xgb",
+        "rf",
+        "gb"
+      ],
+      "feature_periods": {
+        "returns": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10,
+          14,
+          21,
+          30
+        ],
+        "ma": [
+          5,
+          10,
+          20,
+          50
+        ],
+        "volatility": [
+          5,
+          10,
+          20,
+          30
+        ],
+        "volume": [
+          5,
+          10,
+          20
+        ],
+        "lags": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10
+        ]
+      },
+      "model_params": {
+        "xgb": {
+          "n_estimators": 300,
+          "max_depth": 8,
+          "learning_rate": 0.03,
+          "subsample": 0.9,
+          "colsample_bytree": 0.9,
+          "reg_alpha": 0.1,
+          "reg_lambda": 1.0,
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "rf": {
+          "n_estimators": 200,
+          "max_depth": 15,
+          "min_samples_split": 5,
+          "min_samples_leaf": 2,
+          "max_features": "sqrt",
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "gb": {
+          "n_estimators": 200,
+          "max_depth": 6,
+          "learning_rate": 0.05,
+          "subsample": 0.8,
+          "max_features": "sqrt",
+          "random_state": 42
+        }
+      }
+    },
+    "trained_at": "2026-02-02T23:28:23.224307"
+  },
+  "INFY": {
+    "status": "success",
+    "data_points": 781,
+    "validation_scores": {
+      "1_day": {
+        "mae": 1781.843569496617,
+        "mae_std": 1842.781908275782,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 116
+      },
+      "5_day": {
+        "mae": 4525.284146880865,
+        "mae_std": 4890.385097408512,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 116
+      },
+      "30_day": {
+        "mae": 9385.522686876926,
+        "mae_std": 7676.749639587333,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 116
+      }
+    },
+    "model_weights": {
+      "1_day": 0.05028060824658174,
+      "5_day": 0.05011049029931836,
+      "30_day": 0.050053273538046616
+    },
+    "config": {
+      "prediction_timeframes": [
+        1,
+        5,
+        30
+      ],
+      "min_confidence_thresholds": {
+        "1_day": 82,
+        "5_day": 80,
+        "30_day": 78
+      },
+      "max_confidence_thresholds": {
+        "1_day": 95,
+        "5_day": 92,
+        "30_day": 90
+      },
+      "ensemble_models": [
+        "xgb",
+        "rf",
+        "gb"
+      ],
+      "feature_periods": {
+        "returns": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10,
+          14,
+          21,
+          30
+        ],
+        "ma": [
+          5,
+          10,
+          20,
+          50
+        ],
+        "volatility": [
+          5,
+          10,
+          20,
+          30
+        ],
+        "volume": [
+          5,
+          10,
+          20
+        ],
+        "lags": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10
+        ]
+      },
+      "model_params": {
+        "xgb": {
+          "n_estimators": 300,
+          "max_depth": 8,
+          "learning_rate": 0.03,
+          "subsample": 0.9,
+          "colsample_bytree": 0.9,
+          "reg_alpha": 0.1,
+          "reg_lambda": 1.0,
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "rf": {
+          "n_estimators": 200,
+          "max_depth": 15,
+          "min_samples_split": 5,
+          "min_samples_leaf": 2,
+          "max_features": "sqrt",
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "gb": {
+          "n_estimators": 200,
+          "max_depth": 6,
+          "learning_rate": 0.05,
+          "subsample": 0.8,
+          "max_features": "sqrt",
+          "random_state": 42
+        }
+      }
+    },
+    "trained_at": "2026-02-02T23:28:48.040478"
+  },
+  "ITC": {
+    "status": "success",
+    "data_points": 781,
+    "validation_scores": {
+      "1_day": {
+        "mae": 3232.0051908941646,
+        "mae_std": 4746.651415602223,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 116
+      },
+      "5_day": {
+        "mae": 5242.988038568334,
+        "mae_std": 5532.999124384689,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 116
+      },
+      "30_day": {
+        "mae": 5746.358575966538,
+        "mae_std": 3808.477820776243,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 116
+      }
+    },
+    "model_weights": {
+      "1_day": 0.05015470272178213,
+      "5_day": 0.050095365466452824,
+      "30_day": 0.05008701162541513
+    },
+    "config": {
+      "prediction_timeframes": [
+        1,
+        5,
+        30
+      ],
+      "min_confidence_thresholds": {
+        "1_day": 82,
+        "5_day": 80,
+        "30_day": 78
+      },
+      "max_confidence_thresholds": {
+        "1_day": 95,
+        "5_day": 92,
+        "30_day": 90
+      },
+      "ensemble_models": [
+        "xgb",
+        "rf",
+        "gb"
+      ],
+      "feature_periods": {
+        "returns": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10,
+          14,
+          21,
+          30
+        ],
+        "ma": [
+          5,
+          10,
+          20,
+          50
+        ],
+        "volatility": [
+          5,
+          10,
+          20,
+          30
+        ],
+        "volume": [
+          5,
+          10,
+          20
+        ],
+        "lags": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10
+        ]
+      },
+      "model_params": {
+        "xgb": {
+          "n_estimators": 300,
+          "max_depth": 8,
+          "learning_rate": 0.03,
+          "subsample": 0.9,
+          "colsample_bytree": 0.9,
+          "reg_alpha": 0.1,
+          "reg_lambda": 1.0,
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "rf": {
+          "n_estimators": 200,
+          "max_depth": 15,
+          "min_samples_split": 5,
+          "min_samples_leaf": 2,
+          "max_features": "sqrt",
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "gb": {
+          "n_estimators": 200,
+          "max_depth": 6,
+          "learning_rate": 0.05,
+          "subsample": 0.8,
+          "max_features": "sqrt",
+          "random_state": 42
+        }
+      }
+    },
+    "trained_at": "2026-02-02T23:29:13.551268"
+  },
+  "JSWSTEEL": {
+    "status": "success",
+    "data_points": 781,
+    "validation_scores": {
+      "1_day": {
+        "mae": 1800.7362956902532,
+        "mae_std": 2137.9293413788523,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 116
+      },
+      "5_day": {
+        "mae": 3696.494472553287,
+        "mae_std": 4317.856781182486,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 116
+      },
+      "30_day": {
+        "mae": 5505.3315597909705,
+        "mae_std": 5193.156407958918,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 116
+      }
+    },
+    "model_weights": {
+      "1_day": 0.05027766419820548,
+      "5_day": 0.05013526328892882,
+      "30_day": 0.05009082105128073
+    },
+    "config": {
+      "prediction_timeframes": [
+        1,
+        5,
+        30
+      ],
+      "min_confidence_thresholds": {
+        "1_day": 82,
+        "5_day": 80,
+        "30_day": 78
+      },
+      "max_confidence_thresholds": {
+        "1_day": 95,
+        "5_day": 92,
+        "30_day": 90
+      },
+      "ensemble_models": [
+        "xgb",
+        "rf",
+        "gb"
+      ],
+      "feature_periods": {
+        "returns": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10,
+          14,
+          21,
+          30
+        ],
+        "ma": [
+          5,
+          10,
+          20,
+          50
+        ],
+        "volatility": [
+          5,
+          10,
+          20,
+          30
+        ],
+        "volume": [
+          5,
+          10,
+          20
+        ],
+        "lags": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10
+        ]
+      },
+      "model_params": {
+        "xgb": {
+          "n_estimators": 300,
+          "max_depth": 8,
+          "learning_rate": 0.03,
+          "subsample": 0.9,
+          "colsample_bytree": 0.9,
+          "reg_alpha": 0.1,
+          "reg_lambda": 1.0,
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "rf": {
+          "n_estimators": 200,
+          "max_depth": 15,
+          "min_samples_split": 5,
+          "min_samples_leaf": 2,
+          "max_features": "sqrt",
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "gb": {
+          "n_estimators": 200,
+          "max_depth": 6,
+          "learning_rate": 0.05,
+          "subsample": 0.8,
+          "max_features": "sqrt",
+          "random_state": 42
+        }
+      }
+    },
+    "trained_at": "2026-02-02T23:29:37.216317"
+  },
+  "KOTAKBANK": {
+    "status": "success",
+    "data_points": 781,
+    "validation_scores": {
+      "1_day": {
+        "mae": 2961.8436051389617,
+        "mae_std": 4713.65744901189,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 116
+      },
+      "5_day": {
+        "mae": 4024.8100354477174,
+        "mae_std": 6138.309527860984,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 116
+      },
+      "30_day": {
+        "mae": 9861.943924081179,
+        "mae_std": 12824.03076102184,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 116
+      }
+    },
+    "model_weights": {
+      "1_day": 0.05016881377496221,
+      "5_day": 0.0501242294656076,
+      "30_day": 0.0500506999435201
+    },
+    "config": {
+      "prediction_timeframes": [
+        1,
+        5,
+        30
+      ],
+      "min_confidence_thresholds": {
+        "1_day": 82,
+        "5_day": 80,
+        "30_day": 78
+      },
+      "max_confidence_thresholds": {
+        "1_day": 95,
+        "5_day": 92,
+        "30_day": 90
+      },
+      "ensemble_models": [
+        "xgb",
+        "rf",
+        "gb"
+      ],
+      "feature_periods": {
+        "returns": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10,
+          14,
+          21,
+          30
+        ],
+        "ma": [
+          5,
+          10,
+          20,
+          50
+        ],
+        "volatility": [
+          5,
+          10,
+          20,
+          30
+        ],
+        "volume": [
+          5,
+          10,
+          20
+        ],
+        "lags": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10
+        ]
+      },
+      "model_params": {
+        "xgb": {
+          "n_estimators": 300,
+          "max_depth": 8,
+          "learning_rate": 0.03,
+          "subsample": 0.9,
+          "colsample_bytree": 0.9,
+          "reg_alpha": 0.1,
+          "reg_lambda": 1.0,
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "rf": {
+          "n_estimators": 200,
+          "max_depth": 15,
+          "min_samples_split": 5,
+          "min_samples_leaf": 2,
+          "max_features": "sqrt",
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "gb": {
+          "n_estimators": 200,
+          "max_depth": 6,
+          "learning_rate": 0.05,
+          "subsample": 0.8,
+          "max_features": "sqrt",
+          "random_state": 42
+        }
+      }
+    },
+    "trained_at": "2026-02-02T23:30:04.576388"
+  },
+  "MARUTI": {
+    "status": "success",
+    "data_points": 781,
+    "validation_scores": {
+      "1_day": {
+        "mae": 2873.7088687975456,
+        "mae_std": 3229.7633603837644,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 116
+      },
+      "5_day": {
+        "mae": 5074.111547911541,
+        "mae_std": 5704.03808565127,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 116
+      },
+      "30_day": {
+        "mae": 4927.067753586382,
+        "mae_std": 3204.3438011093317,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 116
+      }
+    },
+    "model_weights": {
+      "1_day": 0.05017399118096303,
+      "5_day": 0.050098539418217417,
+      "30_day": 0.05010148023629969
+    },
+    "config": {
+      "prediction_timeframes": [
+        1,
+        5,
+        30
+      ],
+      "min_confidence_thresholds": {
+        "1_day": 82,
+        "5_day": 80,
+        "30_day": 78
+      },
+      "max_confidence_thresholds": {
+        "1_day": 95,
+        "5_day": 92,
+        "30_day": 90
+      },
+      "ensemble_models": [
+        "xgb",
+        "rf",
+        "gb"
+      ],
+      "feature_periods": {
+        "returns": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10,
+          14,
+          21,
+          30
+        ],
+        "ma": [
+          5,
+          10,
+          20,
+          50
+        ],
+        "volatility": [
+          5,
+          10,
+          20,
+          30
+        ],
+        "volume": [
+          5,
+          10,
+          20
+        ],
+        "lags": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10
+        ]
+      },
+      "model_params": {
+        "xgb": {
+          "n_estimators": 300,
+          "max_depth": 8,
+          "learning_rate": 0.03,
+          "subsample": 0.9,
+          "colsample_bytree": 0.9,
+          "reg_alpha": 0.1,
+          "reg_lambda": 1.0,
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "rf": {
+          "n_estimators": 200,
+          "max_depth": 15,
+          "min_samples_split": 5,
+          "min_samples_leaf": 2,
+          "max_features": "sqrt",
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "gb": {
+          "n_estimators": 200,
+          "max_depth": 6,
+          "learning_rate": 0.05,
+          "subsample": 0.8,
+          "max_features": "sqrt",
+          "random_state": 42
+        }
+      }
+    },
+    "trained_at": "2026-02-02T23:30:32.490700"
+  },
+  "NTPC": {
+    "status": "success",
+    "data_points": 781,
+    "validation_scores": {
+      "1_day": {
+        "mae": 2132.0172274008605,
+        "mae_std": 1991.2601241481202,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 116
+      },
+      "5_day": {
+        "mae": 3700.007832701341,
+        "mae_std": 3240.8230536077854,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 116
+      },
+      "30_day": {
+        "mae": 7186.295769063397,
+        "mae_std": 6313.466958931643,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 116
+      }
+    },
+    "model_weights": {
+      "1_day": 0.050234519680863475,
+      "5_day": 0.050135134849025396,
+      "30_day": 0.05006957687465118
+    },
+    "config": {
+      "prediction_timeframes": [
+        1,
+        5,
+        30
+      ],
+      "min_confidence_thresholds": {
+        "1_day": 82,
+        "5_day": 80,
+        "30_day": 78
+      },
+      "max_confidence_thresholds": {
+        "1_day": 95,
+        "5_day": 92,
+        "30_day": 90
+      },
+      "ensemble_models": [
+        "xgb",
+        "rf",
+        "gb"
+      ],
+      "feature_periods": {
+        "returns": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10,
+          14,
+          21,
+          30
+        ],
+        "ma": [
+          5,
+          10,
+          20,
+          50
+        ],
+        "volatility": [
+          5,
+          10,
+          20,
+          30
+        ],
+        "volume": [
+          5,
+          10,
+          20
+        ],
+        "lags": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10
+        ]
+      },
+      "model_params": {
+        "xgb": {
+          "n_estimators": 300,
+          "max_depth": 8,
+          "learning_rate": 0.03,
+          "subsample": 0.9,
+          "colsample_bytree": 0.9,
+          "reg_alpha": 0.1,
+          "reg_lambda": 1.0,
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "rf": {
+          "n_estimators": 200,
+          "max_depth": 15,
+          "min_samples_split": 5,
+          "min_samples_leaf": 2,
+          "max_features": "sqrt",
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "gb": {
+          "n_estimators": 200,
+          "max_depth": 6,
+          "learning_rate": 0.05,
+          "subsample": 0.8,
+          "max_features": "sqrt",
+          "random_state": 42
+        }
+      }
+    },
+    "trained_at": "2026-02-02T23:30:56.246767"
+  },
+  "ONGC": {
+    "status": "success",
+    "data_points": 781,
+    "validation_scores": {
+      "1_day": {
+        "mae": 221.01696203919045,
+        "mae_std": 382.1901445614181,
+        "r2": -13810.220801320573,
+        "r2_std": 27620.441602641145,
+        "samples": 751,
+        "features": 116
+      },
+      "5_day": {
+        "mae": 222.80263531661484,
+        "mae_std": 363.71478183208137,
+        "r2": -54228.394304745016,
+        "r2_std": 108456.78860949005,
+        "samples": 751,
+        "features": 116
+      },
+      "30_day": {
+        "mae": 156.3424535141859,
+        "mae_std": 187.93488471328658,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 116
+      }
+    },
+    "model_weights": {
+      "1_day": 0.05226226979651033,
+      "5_day": 0.05224413861642765,
+      "30_day": 0.05319810765126905
+    },
+    "config": {
+      "prediction_timeframes": [
+        1,
+        5,
+        30
+      ],
+      "min_confidence_thresholds": {
+        "1_day": 82,
+        "5_day": 80,
+        "30_day": 78
+      },
+      "max_confidence_thresholds": {
+        "1_day": 95,
+        "5_day": 92,
+        "30_day": 90
+      },
+      "ensemble_models": [
+        "xgb",
+        "rf",
+        "gb"
+      ],
+      "feature_periods": {
+        "returns": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10,
+          14,
+          21,
+          30
+        ],
+        "ma": [
+          5,
+          10,
+          20,
+          50
+        ],
+        "volatility": [
+          5,
+          10,
+          20,
+          30
+        ],
+        "volume": [
+          5,
+          10,
+          20
+        ],
+        "lags": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10
+        ]
+      },
+      "model_params": {
+        "xgb": {
+          "n_estimators": 300,
+          "max_depth": 8,
+          "learning_rate": 0.03,
+          "subsample": 0.9,
+          "colsample_bytree": 0.9,
+          "reg_alpha": 0.1,
+          "reg_lambda": 1.0,
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "rf": {
+          "n_estimators": 200,
+          "max_depth": 15,
+          "min_samples_split": 5,
+          "min_samples_leaf": 2,
+          "max_features": "sqrt",
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "gb": {
+          "n_estimators": 200,
+          "max_depth": 6,
+          "learning_rate": 0.05,
+          "subsample": 0.8,
+          "max_features": "sqrt",
+          "random_state": 42
+        }
+      }
+    },
+    "trained_at": "2026-02-02T23:31:47.567968"
+  },
+  "POWERGRID": {
+    "status": "failed",
+    "error": "Training failed",
+    "trained_at": "2026-02-02T23:31:47.621288"
+  },
+  "RELIANCE": {
+    "status": "success",
+    "data_points": 781,
+    "validation_scores": {
+      "1_day": {
+        "mae": 1838.318859038663,
+        "mae_std": 1804.2920335933757,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 116
+      },
+      "5_day": {
+        "mae": 3530.435762804724,
+        "mae_std": 3420.4355634298045,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 116
+      },
+      "30_day": {
+        "mae": 7141.755620307005,
+        "mae_std": 6477.162978327791,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 116
+      }
+    },
+    "model_weights": {
+      "1_day": 0.05027198763547989,
+      "5_day": 0.05014162557640226,
+      "30_day": 0.050070010796576164
+    },
+    "config": {
+      "prediction_timeframes": [
+        1,
+        5,
+        30
+      ],
+      "min_confidence_thresholds": {
+        "1_day": 82,
+        "5_day": 80,
+        "30_day": 78
+      },
+      "max_confidence_thresholds": {
+        "1_day": 95,
+        "5_day": 92,
+        "30_day": 90
+      },
+      "ensemble_models": [
+        "xgb",
+        "rf",
+        "gb"
+      ],
+      "feature_periods": {
+        "returns": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10,
+          14,
+          21,
+          30
+        ],
+        "ma": [
+          5,
+          10,
+          20,
+          50
+        ],
+        "volatility": [
+          5,
+          10,
+          20,
+          30
+        ],
+        "volume": [
+          5,
+          10,
+          20
+        ],
+        "lags": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10
+        ]
+      },
+      "model_params": {
+        "xgb": {
+          "n_estimators": 300,
+          "max_depth": 8,
+          "learning_rate": 0.03,
+          "subsample": 0.9,
+          "colsample_bytree": 0.9,
+          "reg_alpha": 0.1,
+          "reg_lambda": 1.0,
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "rf": {
+          "n_estimators": 200,
+          "max_depth": 15,
+          "min_samples_split": 5,
+          "min_samples_leaf": 2,
+          "max_features": "sqrt",
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "gb": {
+          "n_estimators": 200,
+          "max_depth": 6,
+          "learning_rate": 0.05,
+          "subsample": 0.8,
+          "max_features": "sqrt",
+          "random_state": 42
+        }
+      }
+    },
+    "trained_at": "2026-02-02T23:32:11.359835"
+  },
+  "SBIN": {
+    "status": "failed",
+    "error": "Training failed",
+    "trained_at": "2026-02-02T23:32:11.412611"
+  },
+  "SUNPHARMA": {
+    "status": "success",
+    "data_points": 781,
+    "validation_scores": {
+      "1_day": {
+        "mae": 911.8976261095717,
+        "mae_std": 1145.8842857118343,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 116
+      },
+      "5_day": {
+        "mae": 2202.529464926359,
+        "mae_std": 2514.9781789346252,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 116
+      },
+      "30_day": {
+        "mae": 4672.621808015263,
+        "mae_std": 4113.372091082229,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 116
+      }
+    },
+    "model_weights": {
+      "1_day": 0.05054830716204937,
+      "5_day": 0.05022701171890552,
+      "30_day": 0.05010700630618881
+    },
+    "config": {
+      "prediction_timeframes": [
+        1,
+        5,
+        30
+      ],
+      "min_confidence_thresholds": {
+        "1_day": 82,
+        "5_day": 80,
+        "30_day": 78
+      },
+      "max_confidence_thresholds": {
+        "1_day": 95,
+        "5_day": 92,
+        "30_day": 90
+      },
+      "ensemble_models": [
+        "xgb",
+        "rf",
+        "gb"
+      ],
+      "feature_periods": {
+        "returns": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10,
+          14,
+          21,
+          30
+        ],
+        "ma": [
+          5,
+          10,
+          20,
+          50
+        ],
+        "volatility": [
+          5,
+          10,
+          20,
+          30
+        ],
+        "volume": [
+          5,
+          10,
+          20
+        ],
+        "lags": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10
+        ]
+      },
+      "model_params": {
+        "xgb": {
+          "n_estimators": 300,
+          "max_depth": 8,
+          "learning_rate": 0.03,
+          "subsample": 0.9,
+          "colsample_bytree": 0.9,
+          "reg_alpha": 0.1,
+          "reg_lambda": 1.0,
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "rf": {
+          "n_estimators": 200,
+          "max_depth": 15,
+          "min_samples_split": 5,
+          "min_samples_leaf": 2,
+          "max_features": "sqrt",
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "gb": {
+          "n_estimators": 200,
+          "max_depth": 6,
+          "learning_rate": 0.05,
+          "subsample": 0.8,
+          "max_features": "sqrt",
+          "random_state": 42
+        }
+      }
+    },
+    "trained_at": "2026-02-02T23:32:34.502882"
+  },
+  "TATAMOTORS": {
+    "status": "success",
+    "data_points": 781,
+    "validation_scores": {
+      "1_day": {
+        "mae": 2894.2953092978028,
+        "mae_std": 3736.7600978399146,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 116
+      },
+      "5_day": {
+        "mae": 4747.8858351515255,
+        "mae_std": 6084.160225340022,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 116
+      },
+      "30_day": {
+        "mae": 7483.655063067587,
+        "mae_std": 5951.295794359987,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 116
+      }
+    },
+    "model_weights": {
+      "1_day": 0.05017275362269393,
+      "5_day": 0.050105310030033344,
+      "30_day": 0.05006681227230805
+    },
+    "config": {
+      "prediction_timeframes": [
+        1,
+        5,
+        30
+      ],
+      "min_confidence_thresholds": {
+        "1_day": 82,
+        "5_day": 80,
+        "30_day": 78
+      },
+      "max_confidence_thresholds": {
+        "1_day": 95,
+        "5_day": 92,
+        "30_day": 90
+      },
+      "ensemble_models": [
+        "xgb",
+        "rf",
+        "gb"
+      ],
+      "feature_periods": {
+        "returns": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10,
+          14,
+          21,
+          30
+        ],
+        "ma": [
+          5,
+          10,
+          20,
+          50
+        ],
+        "volatility": [
+          5,
+          10,
+          20,
+          30
+        ],
+        "volume": [
+          5,
+          10,
+          20
+        ],
+        "lags": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10
+        ]
+      },
+      "model_params": {
+        "xgb": {
+          "n_estimators": 300,
+          "max_depth": 8,
+          "learning_rate": 0.03,
+          "subsample": 0.9,
+          "colsample_bytree": 0.9,
+          "reg_alpha": 0.1,
+          "reg_lambda": 1.0,
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "rf": {
+          "n_estimators": 200,
+          "max_depth": 15,
+          "min_samples_split": 5,
+          "min_samples_leaf": 2,
+          "max_features": "sqrt",
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "gb": {
+          "n_estimators": 200,
+          "max_depth": 6,
+          "learning_rate": 0.05,
+          "subsample": 0.8,
+          "max_features": "sqrt",
+          "random_state": 42
+        }
+      }
+    },
+    "trained_at": "2026-02-02T23:33:00.935874"
+  },
+  "TCS": {
+    "status": "success",
+    "data_points": 781,
+    "validation_scores": {
+      "1_day": {
+        "mae": 137.27696907101605,
+        "mae_std": 161.67409703922405,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 116
+      },
+      "5_day": {
+        "mae": 125.39828605326416,
+        "mae_std": 141.65745647523391,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 116
+      },
+      "30_day": {
+        "mae": 56.56457788208995,
+        "mae_std": 60.11197635947324,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 116
+      }
+    },
+    "model_weights": {
+      "1_day": 0.05364227153135257,
+      "5_day": 0.053987295295250884,
+      "30_day": 0.05883945412273396
+    },
+    "config": {
+      "prediction_timeframes": [
+        1,
+        5,
+        30
+      ],
+      "min_confidence_thresholds": {
+        "1_day": 82,
+        "5_day": 80,
+        "30_day": 78
+      },
+      "max_confidence_thresholds": {
+        "1_day": 95,
+        "5_day": 92,
+        "30_day": 90
+      },
+      "ensemble_models": [
+        "xgb",
+        "rf",
+        "gb"
+      ],
+      "feature_periods": {
+        "returns": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10,
+          14,
+          21,
+          30
+        ],
+        "ma": [
+          5,
+          10,
+          20,
+          50
+        ],
+        "volatility": [
+          5,
+          10,
+          20,
+          30
+        ],
+        "volume": [
+          5,
+          10,
+          20
+        ],
+        "lags": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10
+        ]
+      },
+      "model_params": {
+        "xgb": {
+          "n_estimators": 300,
+          "max_depth": 8,
+          "learning_rate": 0.03,
+          "subsample": 0.9,
+          "colsample_bytree": 0.9,
+          "reg_alpha": 0.1,
+          "reg_lambda": 1.0,
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "rf": {
+          "n_estimators": 200,
+          "max_depth": 15,
+          "min_samples_split": 5,
+          "min_samples_leaf": 2,
+          "max_features": "sqrt",
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "gb": {
+          "n_estimators": 200,
+          "max_depth": 6,
+          "learning_rate": 0.05,
+          "subsample": 0.8,
+          "max_features": "sqrt",
+          "random_state": 42
+        }
+      }
+    },
+    "trained_at": "2026-02-02T23:33:39.012446"
+  },
+  "TECHM": {
+    "status": "success",
+    "data_points": 781,
+    "validation_scores": {
+      "1_day": {
+        "mae": 1399.4278413673692,
+        "mae_std": 1157.2457667206656,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 116
+      },
+      "5_day": {
+        "mae": 3667.4180258623537,
+        "mae_std": 3540.2267602885754,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 116
+      },
+      "30_day": {
+        "mae": 5662.890570321231,
+        "mae_std": 5006.404067149821,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 116
+      }
+    },
+    "model_weights": {
+      "1_day": 0.05035728887539794,
+      "5_day": 0.0501363356989407,
+      "30_day": 0.05008829413065691
+    },
+    "config": {
+      "prediction_timeframes": [
+        1,
+        5,
+        30
+      ],
+      "min_confidence_thresholds": {
+        "1_day": 82,
+        "5_day": 80,
+        "30_day": 78
+      },
+      "max_confidence_thresholds": {
+        "1_day": 95,
+        "5_day": 92,
+        "30_day": 90
+      },
+      "ensemble_models": [
+        "xgb",
+        "rf",
+        "gb"
+      ],
+      "feature_periods": {
+        "returns": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10,
+          14,
+          21,
+          30
+        ],
+        "ma": [
+          5,
+          10,
+          20,
+          50
+        ],
+        "volatility": [
+          5,
+          10,
+          20,
+          30
+        ],
+        "volume": [
+          5,
+          10,
+          20
+        ],
+        "lags": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10
+        ]
+      },
+      "model_params": {
+        "xgb": {
+          "n_estimators": 300,
+          "max_depth": 8,
+          "learning_rate": 0.03,
+          "subsample": 0.9,
+          "colsample_bytree": 0.9,
+          "reg_alpha": 0.1,
+          "reg_lambda": 1.0,
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "rf": {
+          "n_estimators": 200,
+          "max_depth": 15,
+          "min_samples_split": 5,
+          "min_samples_leaf": 2,
+          "max_features": "sqrt",
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "gb": {
+          "n_estimators": 200,
+          "max_depth": 6,
+          "learning_rate": 0.05,
+          "subsample": 0.8,
+          "max_features": "sqrt",
+          "random_state": 42
+        }
+      }
+    },
+    "trained_at": "2026-02-02T23:34:02.987754"
+  },
+  "TITAN": {
+    "status": "success",
+    "data_points": 781,
+    "validation_scores": {
+      "1_day": {
+        "mae": 249.83667131934234,
+        "mae_std": 459.1617483945054,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 116
+      },
+      "5_day": {
+        "mae": 242.82727203232048,
+        "mae_std": 439.65491945086603,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 116
+      },
+      "30_day": {
+        "mae": 237.8384857174,
+        "mae_std": 401.8188910134027,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 116
+      }
+    },
+    "model_weights": {
+      "1_day": 0.05200130747563311,
+      "5_day": 0.05205907678225852,
+      "30_day": 0.05210226699177624
+    },
+    "config": {
+      "prediction_timeframes": [
+        1,
+        5,
+        30
+      ],
+      "min_confidence_thresholds": {
+        "1_day": 82,
+        "5_day": 80,
+        "30_day": 78
+      },
+      "max_confidence_thresholds": {
+        "1_day": 95,
+        "5_day": 92,
+        "30_day": 90
+      },
+      "ensemble_models": [
+        "xgb",
+        "rf",
+        "gb"
+      ],
+      "feature_periods": {
+        "returns": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10,
+          14,
+          21,
+          30
+        ],
+        "ma": [
+          5,
+          10,
+          20,
+          50
+        ],
+        "volatility": [
+          5,
+          10,
+          20,
+          30
+        ],
+        "volume": [
+          5,
+          10,
+          20
+        ],
+        "lags": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10
+        ]
+      },
+      "model_params": {
+        "xgb": {
+          "n_estimators": 300,
+          "max_depth": 8,
+          "learning_rate": 0.03,
+          "subsample": 0.9,
+          "colsample_bytree": 0.9,
+          "reg_alpha": 0.1,
+          "reg_lambda": 1.0,
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "rf": {
+          "n_estimators": 200,
+          "max_depth": 15,
+          "min_samples_split": 5,
+          "min_samples_leaf": 2,
+          "max_features": "sqrt",
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "gb": {
+          "n_estimators": 200,
+          "max_depth": 6,
+          "learning_rate": 0.05,
+          "subsample": 0.8,
+          "max_features": "sqrt",
+          "random_state": 42
+        }
+      }
+    },
+    "trained_at": "2026-02-02T23:34:53.363904"
+  },
+  "ULTRACEMCO": {
+    "status": "success",
+    "data_points": 781,
+    "validation_scores": {
+      "1_day": {
+        "mae": 1338.3219591837271,
+        "mae_std": 1272.6309818226107,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 116
+      },
+      "5_day": {
+        "mae": 3751.0635748452005,
+        "mae_std": 4150.251360365866,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 116
+      },
+      "30_day": {
+        "mae": 4083.2282971137997,
+        "mae_std": 5616.681839260967,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 116
+      }
+    },
+    "model_weights": {
+      "1_day": 0.050373602178605335,
+      "5_day": 0.05013329552802563,
+      "30_day": 0.05012245212941705
+    },
+    "config": {
+      "prediction_timeframes": [
+        1,
+        5,
+        30
+      ],
+      "min_confidence_thresholds": {
+        "1_day": 82,
+        "5_day": 80,
+        "30_day": 78
+      },
+      "max_confidence_thresholds": {
+        "1_day": 95,
+        "5_day": 92,
+        "30_day": 90
+      },
+      "ensemble_models": [
+        "xgb",
+        "rf",
+        "gb"
+      ],
+      "feature_periods": {
+        "returns": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10,
+          14,
+          21,
+          30
+        ],
+        "ma": [
+          5,
+          10,
+          20,
+          50
+        ],
+        "volatility": [
+          5,
+          10,
+          20,
+          30
+        ],
+        "volume": [
+          5,
+          10,
+          20
+        ],
+        "lags": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10
+        ]
+      },
+      "model_params": {
+        "xgb": {
+          "n_estimators": 300,
+          "max_depth": 8,
+          "learning_rate": 0.03,
+          "subsample": 0.9,
+          "colsample_bytree": 0.9,
+          "reg_alpha": 0.1,
+          "reg_lambda": 1.0,
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "rf": {
+          "n_estimators": 200,
+          "max_depth": 15,
+          "min_samples_split": 5,
+          "min_samples_leaf": 2,
+          "max_features": "sqrt",
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "gb": {
+          "n_estimators": 200,
+          "max_depth": 6,
+          "learning_rate": 0.05,
+          "subsample": 0.8,
+          "max_features": "sqrt",
+          "random_state": 42
+        }
+      }
+    },
+    "trained_at": "2026-02-02T23:35:17.996673"
+  },
+  "WIPRO": {
+    "status": "success",
+    "data_points": 781,
+    "validation_scores": {
+      "1_day": {
+        "mae": 26.181741134793377,
+        "mae_std": 38.444041207405775,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 116
+      },
+      "5_day": {
+        "mae": 26.21104484835424,
+        "mae_std": 36.37184970378239,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 116
+      },
+      "30_day": {
+        "mae": 28.293721628277428,
+        "mae_std": 38.23840208071881,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 116
+      }
+    },
+    "model_weights": {
+      "1_day": 0.06909727769167588,
+      "5_day": 0.06907592710694505,
+      "30_day": 0.06767176438989644
+    },
+    "config": {
+      "prediction_timeframes": [
+        1,
+        5,
+        30
+      ],
+      "min_confidence_thresholds": {
+        "1_day": 82,
+        "5_day": 80,
+        "30_day": 78
+      },
+      "max_confidence_thresholds": {
+        "1_day": 95,
+        "5_day": 92,
+        "30_day": 90
+      },
+      "ensemble_models": [
+        "xgb",
+        "rf",
+        "gb"
+      ],
+      "feature_periods": {
+        "returns": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10,
+          14,
+          21,
+          30
+        ],
+        "ma": [
+          5,
+          10,
+          20,
+          50
+        ],
+        "volatility": [
+          5,
+          10,
+          20,
+          30
+        ],
+        "volume": [
+          5,
+          10,
+          20
+        ],
+        "lags": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10
+        ]
+      },
+      "model_params": {
+        "xgb": {
+          "n_estimators": 300,
+          "max_depth": 8,
+          "learning_rate": 0.03,
+          "subsample": 0.9,
+          "colsample_bytree": 0.9,
+          "reg_alpha": 0.1,
+          "reg_lambda": 1.0,
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "rf": {
+          "n_estimators": 200,
+          "max_depth": 15,
+          "min_samples_split": 5,
+          "min_samples_leaf": 2,
+          "max_features": "sqrt",
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "gb": {
+          "n_estimators": 200,
+          "max_depth": 6,
+          "learning_rate": 0.05,
+          "subsample": 0.8,
+          "max_features": "sqrt",
+          "random_state": 42
+        }
+      }
+    },
+    "trained_at": "2026-02-02T23:35:55.482638"
+  }
+}

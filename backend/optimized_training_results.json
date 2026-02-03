@@ -1,0 +1,4229 @@
+{
+  "ASIANPAINT": {
+    "status": "success",
+    "data_points": 781,
+    "validation_scores": {
+      "1_day": {
+        "mae": 933.172141765867,
+        "mae_std": 1022.7506191146463,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 780,
+        "features": 234
+      },
+      "5_day": {
+        "mae": 1848.099808155368,
+        "mae_std": 1655.9291283380269,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 776,
+        "features": 234
+      },
+      "30_day": {
+        "mae": 4450.400876079838,
+        "mae_std": 4087.413632079346,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 234
+      }
+    },
+    "model_weights": {
+      "1_day": 0.050535806821791776,
+      "5_day": 0.05027054815845066,
+      "30_day": 0.05011234942959298
+    },
+    "config": {
+      "prediction_timeframes": [
+        1,
+        5,
+        30
+      ],
+      "min_confidence_thresholds": {
+        "1_day": 85,
+        "5_day": 83,
+        "30_day": 80
+      },
+      "max_confidence_thresholds": {
+        "1_day": 96,
+        "5_day": 94,
+        "30_day": 92
+      },
+      "ensemble_models": [
+        "xgb",
+        "rf",
+        "gb",
+        "et"
+      ],
+      "feature_periods": {
+        "returns": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10,
+          14,
+          21,
+          30
+        ],
+        "ma": [
+          5,
+          10,
+          20,
+          50,
+          100
+        ],
+        "volatility": [
+          5,
+          10,
+          20,
+          30
+        ],
+        "volume": [
+          5,
+          10,
+          20
+        ],
+        "lags": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10,
+          14
+        ]
+      },
+      "optimized_params": {
+        "xgb": {
+          "n_estimators": 500,
+          "max_depth": 10,
+          "learning_rate": 0.02,
+          "subsample": 0.95,
+          "colsample_bytree": 0.95,
+          "reg_alpha": 0.05,
+          "reg_lambda": 1.5,
+          "min_child_weight": 1,
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "rf": {
+          "n_estimators": 300,
+          "max_depth": 20,
+          "min_samples_split": 3,
+          "min_samples_leaf": 1,
+          "max_features": "sqrt",
+          "bootstrap": true,
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "gb": {
+          "n_estimators": 300,
+          "max_depth": 8,
+          "learning_rate": 0.03,
+          "subsample": 0.85,
+          "max_features": "sqrt",
+          "min_samples_split": 3,
+          "random_state": 42
+        },
+        "et": {
+          "n_estimators": 250,
+          "max_depth": 15,
+          "min_samples_split": 2,
+          "min_samples_leaf": 1,
+          "max_features": "sqrt",
+          "bootstrap": false,
+          "random_state": 42,
+          "n_jobs": -1
+        }
+      },
+      "timeframe_specific_params": {
+        "1_day": {
+          "lookback_period": 60,
+          "feature_importance_threshold": 0.01
+        },
+        "5_day": {
+          "lookback_period": 90,
+          "feature_importance_threshold": 0.008
+        },
+        "30_day": {
+          "lookback_period": 180,
+          "feature_importance_threshold": 0.005
+        }
+      }
+    },
+    "trained_at": "2026-02-02T23:45:07.568570"
+  },
+  "AXISBANK": {
+    "status": "success",
+    "data_points": 781,
+    "validation_scores": {
+      "1_day": {
+        "mae": 30.196085191181584,
+        "mae_std": 23.67823212412187,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 780,
+        "features": 234
+      },
+      "5_day": {
+        "mae": 32.028846797847734,
+        "mae_std": 23.5638516604807,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 776,
+        "features": 234
+      },
+      "30_day": {
+        "mae": 20.356142155736983,
+        "mae_std": 13.892320757553877,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 234
+      }
+    },
+    "model_weights": {
+      "1_day": 0.06655843730324293,
+      "5_day": 0.06561092684806473,
+      "30_day": 0.07456260973283069
+    },
+    "config": {
+      "prediction_timeframes": [
+        1,
+        5,
+        30
+      ],
+      "min_confidence_thresholds": {
+        "1_day": 85,
+        "5_day": 83,
+        "30_day": 80
+      },
+      "max_confidence_thresholds": {
+        "1_day": 96,
+        "5_day": 94,
+        "30_day": 92
+      },
+      "ensemble_models": [
+        "xgb",
+        "rf",
+        "gb",
+        "et"
+      ],
+      "feature_periods": {
+        "returns": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10,
+          14,
+          21,
+          30
+        ],
+        "ma": [
+          5,
+          10,
+          20,
+          50,
+          100
+        ],
+        "volatility": [
+          5,
+          10,
+          20,
+          30
+        ],
+        "volume": [
+          5,
+          10,
+          20
+        ],
+        "lags": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10,
+          14
+        ]
+      },
+      "optimized_params": {
+        "xgb": {
+          "n_estimators": 500,
+          "max_depth": 10,
+          "learning_rate": 0.02,
+          "subsample": 0.95,
+          "colsample_bytree": 0.95,
+          "reg_alpha": 0.05,
+          "reg_lambda": 1.5,
+          "min_child_weight": 1,
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "rf": {
+          "n_estimators": 300,
+          "max_depth": 20,
+          "min_samples_split": 3,
+          "min_samples_leaf": 1,
+          "max_features": "sqrt",
+          "bootstrap": true,
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "gb": {
+          "n_estimators": 300,
+          "max_depth": 8,
+          "learning_rate": 0.03,
+          "subsample": 0.85,
+          "max_features": "sqrt",
+          "min_samples_split": 3,
+          "random_state": 42
+        },
+        "et": {
+          "n_estimators": 250,
+          "max_depth": 15,
+          "min_samples_split": 2,
+          "min_samples_leaf": 1,
+          "max_features": "sqrt",
+          "bootstrap": false,
+          "random_state": 42,
+          "n_jobs": -1
+        }
+      },
+      "timeframe_specific_params": {
+        "1_day": {
+          "lookback_period": 60,
+          "feature_importance_threshold": 0.01
+        },
+        "5_day": {
+          "lookback_period": 90,
+          "feature_importance_threshold": 0.008
+        },
+        "30_day": {
+          "lookback_period": 180,
+          "feature_importance_threshold": 0.005
+        }
+      }
+    },
+    "trained_at": "2026-02-02T23:46:25.385333"
+  },
+  "BAJFINANCE": {
+    "status": "success",
+    "data_points": 781,
+    "validation_scores": {
+      "1_day": {
+        "mae": 55.26119142854467,
+        "mae_std": 47.09844987814331,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 780,
+        "features": 234
+      },
+      "5_day": {
+        "mae": 54.56015921860237,
+        "mae_std": 45.07290298855203,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 776,
+        "features": 234
+      },
+      "30_day": {
+        "mae": 26.18330765397432,
+        "mae_std": 14.94640685459234,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 234
+      }
+    },
+    "model_weights": {
+      "1_day": 0.05904794084287131,
+      "5_day": 0.05916419596270768,
+      "30_day": 0.06909613512210214
+    },
+    "config": {
+      "prediction_timeframes": [
+        1,
+        5,
+        30
+      ],
+      "min_confidence_thresholds": {
+        "1_day": 85,
+        "5_day": 83,
+        "30_day": 80
+      },
+      "max_confidence_thresholds": {
+        "1_day": 96,
+        "5_day": 94,
+        "30_day": 92
+      },
+      "ensemble_models": [
+        "xgb",
+        "rf",
+        "gb",
+        "et"
+      ],
+      "feature_periods": {
+        "returns": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10,
+          14,
+          21,
+          30
+        ],
+        "ma": [
+          5,
+          10,
+          20,
+          50,
+          100
+        ],
+        "volatility": [
+          5,
+          10,
+          20,
+          30
+        ],
+        "volume": [
+          5,
+          10,
+          20
+        ],
+        "lags": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10,
+          14
+        ]
+      },
+      "optimized_params": {
+        "xgb": {
+          "n_estimators": 500,
+          "max_depth": 10,
+          "learning_rate": 0.02,
+          "subsample": 0.95,
+          "colsample_bytree": 0.95,
+          "reg_alpha": 0.05,
+          "reg_lambda": 1.5,
+          "min_child_weight": 1,
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "rf": {
+          "n_estimators": 300,
+          "max_depth": 20,
+          "min_samples_split": 3,
+          "min_samples_leaf": 1,
+          "max_features": "sqrt",
+          "bootstrap": true,
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "gb": {
+          "n_estimators": 300,
+          "max_depth": 8,
+          "learning_rate": 0.03,
+          "subsample": 0.85,
+          "max_features": "sqrt",
+          "min_samples_split": 3,
+          "random_state": 42
+        },
+        "et": {
+          "n_estimators": 250,
+          "max_depth": 15,
+          "min_samples_split": 2,
+          "min_samples_leaf": 1,
+          "max_features": "sqrt",
+          "bootstrap": false,
+          "random_state": 42,
+          "n_jobs": -1
+        }
+      },
+      "timeframe_specific_params": {
+        "1_day": {
+          "lookback_period": 60,
+          "feature_importance_threshold": 0.01
+        },
+        "5_day": {
+          "lookback_period": 90,
+          "feature_importance_threshold": 0.008
+        },
+        "30_day": {
+          "lookback_period": 180,
+          "feature_importance_threshold": 0.005
+        }
+      }
+    },
+    "trained_at": "2026-02-02T23:47:45.382066"
+  },
+  "BHARTIARTL": {
+    "status": "success",
+    "data_points": 781,
+    "validation_scores": {
+      "1_day": {
+        "mae": 1735.4324282440145,
+        "mae_std": 1929.7940227579895,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 780,
+        "features": 234
+      },
+      "5_day": {
+        "mae": 2645.4400060688686,
+        "mae_std": 2754.604406814598,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 776,
+        "features": 234
+      },
+      "30_day": {
+        "mae": 3535.876543030633,
+        "mae_std": 3988.315913370188,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 234
+      }
+    },
+    "model_weights": {
+      "1_day": 0.05028811262920667,
+      "5_day": 0.050189004475120945,
+      "30_day": 0.05014140765204151
+    },
+    "config": {
+      "prediction_timeframes": [
+        1,
+        5,
+        30
+      ],
+      "min_confidence_thresholds": {
+        "1_day": 85,
+        "5_day": 83,
+        "30_day": 80
+      },
+      "max_confidence_thresholds": {
+        "1_day": 96,
+        "5_day": 94,
+        "30_day": 92
+      },
+      "ensemble_models": [
+        "xgb",
+        "rf",
+        "gb",
+        "et"
+      ],
+      "feature_periods": {
+        "returns": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10,
+          14,
+          21,
+          30
+        ],
+        "ma": [
+          5,
+          10,
+          20,
+          50,
+          100
+        ],
+        "volatility": [
+          5,
+          10,
+          20,
+          30
+        ],
+        "volume": [
+          5,
+          10,
+          20
+        ],
+        "lags": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10,
+          14
+        ]
+      },
+      "optimized_params": {
+        "xgb": {
+          "n_estimators": 500,
+          "max_depth": 10,
+          "learning_rate": 0.02,
+          "subsample": 0.95,
+          "colsample_bytree": 0.95,
+          "reg_alpha": 0.05,
+          "reg_lambda": 1.5,
+          "min_child_weight": 1,
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "rf": {
+          "n_estimators": 300,
+          "max_depth": 20,
+          "min_samples_split": 3,
+          "min_samples_leaf": 1,
+          "max_features": "sqrt",
+          "bootstrap": true,
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "gb": {
+          "n_estimators": 300,
+          "max_depth": 8,
+          "learning_rate": 0.03,
+          "subsample": 0.85,
+          "max_features": "sqrt",
+          "min_samples_split": 3,
+          "random_state": 42
+        },
+        "et": {
+          "n_estimators": 250,
+          "max_depth": 15,
+          "min_samples_split": 2,
+          "min_samples_leaf": 1,
+          "max_features": "sqrt",
+          "bootstrap": false,
+          "random_state": 42,
+          "n_jobs": -1
+        }
+      },
+      "timeframe_specific_params": {
+        "1_day": {
+          "lookback_period": 60,
+          "feature_importance_threshold": 0.01
+        },
+        "5_day": {
+          "lookback_period": 90,
+          "feature_importance_threshold": 0.008
+        },
+        "30_day": {
+          "lookback_period": 180,
+          "feature_importance_threshold": 0.005
+        }
+      }
+    },
+    "trained_at": "2026-02-02T23:48:41.776715"
+  },
+  "BPCL": {
+    "status": "success",
+    "data_points": 781,
+    "validation_scores": {
+      "1_day": {
+        "mae": 1380.5706144283984,
+        "mae_std": 2033.3997588217644,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 780,
+        "features": 234
+      },
+      "5_day": {
+        "mae": 2270.1471907230853,
+        "mae_std": 1682.0642246376835,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 776,
+        "features": 234
+      },
+      "30_day": {
+        "mae": 2328.4920787191586,
+        "mae_std": 2338.5619791307195,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 234
+      }
+    },
+    "model_weights": {
+      "1_day": 0.05036216908748623,
+      "5_day": 0.05022025003569064,
+      "30_day": 0.050214731243603934
+    },
+    "config": {
+      "prediction_timeframes": [
+        1,
+        5,
+        30
+      ],
+      "min_confidence_thresholds": {
+        "1_day": 85,
+        "5_day": 83,
+        "30_day": 80
+      },
+      "max_confidence_thresholds": {
+        "1_day": 96,
+        "5_day": 94,
+        "30_day": 92
+      },
+      "ensemble_models": [
+        "xgb",
+        "rf",
+        "gb",
+        "et"
+      ],
+      "feature_periods": {
+        "returns": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10,
+          14,
+          21,
+          30
+        ],
+        "ma": [
+          5,
+          10,
+          20,
+          50,
+          100
+        ],
+        "volatility": [
+          5,
+          10,
+          20,
+          30
+        ],
+        "volume": [
+          5,
+          10,
+          20
+        ],
+        "lags": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10,
+          14
+        ]
+      },
+      "optimized_params": {
+        "xgb": {
+          "n_estimators": 500,
+          "max_depth": 10,
+          "learning_rate": 0.02,
+          "subsample": 0.95,
+          "colsample_bytree": 0.95,
+          "reg_alpha": 0.05,
+          "reg_lambda": 1.5,
+          "min_child_weight": 1,
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "rf": {
+          "n_estimators": 300,
+          "max_depth": 20,
+          "min_samples_split": 3,
+          "min_samples_leaf": 1,
+          "max_features": "sqrt",
+          "bootstrap": true,
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "gb": {
+          "n_estimators": 300,
+          "max_depth": 8,
+          "learning_rate": 0.03,
+          "subsample": 0.85,
+          "max_features": "sqrt",
+          "min_samples_split": 3,
+          "random_state": 42
+        },
+        "et": {
+          "n_estimators": 250,
+          "max_depth": 15,
+          "min_samples_split": 2,
+          "min_samples_leaf": 1,
+          "max_features": "sqrt",
+          "bootstrap": false,
+          "random_state": 42,
+          "n_jobs": -1
+        }
+      },
+      "timeframe_specific_params": {
+        "1_day": {
+          "lookback_period": 60,
+          "feature_importance_threshold": 0.01
+        },
+        "5_day": {
+          "lookback_period": 90,
+          "feature_importance_threshold": 0.008
+        },
+        "30_day": {
+          "lookback_period": 180,
+          "feature_importance_threshold": 0.005
+        }
+      }
+    },
+    "trained_at": "2026-02-02T23:49:37.913591"
+  },
+  "COALINDIA": {
+    "status": "success",
+    "data_points": 781,
+    "validation_scores": {
+      "1_day": {
+        "mae": 827.5561699620523,
+        "mae_std": 806.93601099323,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 780,
+        "features": 234
+      },
+      "5_day": {
+        "mae": 1633.8164417077285,
+        "mae_std": 1548.7301315297495,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 776,
+        "features": 234
+      },
+      "30_day": {
+        "mae": 3656.7873923211546,
+        "mae_std": 3307.9463875084843,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 234
+      }
+    },
+    "model_weights": {
+      "1_day": 0.050604188594737615,
+      "5_day": 0.05030603193047277,
+      "30_day": 0.050136732039963064
+    },
+    "config": {
+      "prediction_timeframes": [
+        1,
+        5,
+        30
+      ],
+      "min_confidence_thresholds": {
+        "1_day": 85,
+        "5_day": 83,
+        "30_day": 80
+      },
+      "max_confidence_thresholds": {
+        "1_day": 96,
+        "5_day": 94,
+        "30_day": 92
+      },
+      "ensemble_models": [
+        "xgb",
+        "rf",
+        "gb",
+        "et"
+      ],
+      "feature_periods": {
+        "returns": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10,
+          14,
+          21,
+          30
+        ],
+        "ma": [
+          5,
+          10,
+          20,
+          50,
+          100
+        ],
+        "volatility": [
+          5,
+          10,
+          20,
+          30
+        ],
+        "volume": [
+          5,
+          10,
+          20
+        ],
+        "lags": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10,
+          14
+        ]
+      },
+      "optimized_params": {
+        "xgb": {
+          "n_estimators": 500,
+          "max_depth": 10,
+          "learning_rate": 0.02,
+          "subsample": 0.95,
+          "colsample_bytree": 0.95,
+          "reg_alpha": 0.05,
+          "reg_lambda": 1.5,
+          "min_child_weight": 1,
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "rf": {
+          "n_estimators": 300,
+          "max_depth": 20,
+          "min_samples_split": 3,
+          "min_samples_leaf": 1,
+          "max_features": "sqrt",
+          "bootstrap": true,
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "gb": {
+          "n_estimators": 300,
+          "max_depth": 8,
+          "learning_rate": 0.03,
+          "subsample": 0.85,
+          "max_features": "sqrt",
+          "min_samples_split": 3,
+          "random_state": 42
+        },
+        "et": {
+          "n_estimators": 250,
+          "max_depth": 15,
+          "min_samples_split": 2,
+          "min_samples_leaf": 1,
+          "max_features": "sqrt",
+          "bootstrap": false,
+          "random_state": 42,
+          "n_jobs": -1
+        }
+      },
+      "timeframe_specific_params": {
+        "1_day": {
+          "lookback_period": 60,
+          "feature_importance_threshold": 0.01
+        },
+        "5_day": {
+          "lookback_period": 90,
+          "feature_importance_threshold": 0.008
+        },
+        "30_day": {
+          "lookback_period": 180,
+          "feature_importance_threshold": 0.005
+        }
+      }
+    },
+    "trained_at": "2026-02-02T23:50:31.454828"
+  },
+  "DIVISLAB": {
+    "status": "success",
+    "data_points": 781,
+    "validation_scores": {
+      "1_day": {
+        "mae": 25.777541741767607,
+        "mae_std": 22.053163191467043,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 780,
+        "features": 234
+      },
+      "5_day": {
+        "mae": 22.590332060658405,
+        "mae_std": 19.967148345422558,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 776,
+        "features": 234
+      },
+      "30_day": {
+        "mae": 9.379143224186297,
+        "mae_std": 7.151695751667595,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 234
+      }
+    },
+    "model_weights": {
+      "1_day": 0.06939672857916923,
+      "5_day": 0.0721333611442304,
+      "30_day": 0.10330976771960007
+    },
+    "config": {
+      "prediction_timeframes": [
+        1,
+        5,
+        30
+      ],
+      "min_confidence_thresholds": {
+        "1_day": 85,
+        "5_day": 83,
+        "30_day": 80
+      },
+      "max_confidence_thresholds": {
+        "1_day": 96,
+        "5_day": 94,
+        "30_day": 92
+      },
+      "ensemble_models": [
+        "xgb",
+        "rf",
+        "gb",
+        "et"
+      ],
+      "feature_periods": {
+        "returns": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10,
+          14,
+          21,
+          30
+        ],
+        "ma": [
+          5,
+          10,
+          20,
+          50,
+          100
+        ],
+        "volatility": [
+          5,
+          10,
+          20,
+          30
+        ],
+        "volume": [
+          5,
+          10,
+          20
+        ],
+        "lags": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10,
+          14
+        ]
+      },
+      "optimized_params": {
+        "xgb": {
+          "n_estimators": 500,
+          "max_depth": 10,
+          "learning_rate": 0.02,
+          "subsample": 0.95,
+          "colsample_bytree": 0.95,
+          "reg_alpha": 0.05,
+          "reg_lambda": 1.5,
+          "min_child_weight": 1,
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "rf": {
+          "n_estimators": 300,
+          "max_depth": 20,
+          "min_samples_split": 3,
+          "min_samples_leaf": 1,
+          "max_features": "sqrt",
+          "bootstrap": true,
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "gb": {
+          "n_estimators": 300,
+          "max_depth": 8,
+          "learning_rate": 0.03,
+          "subsample": 0.85,
+          "max_features": "sqrt",
+          "min_samples_split": 3,
+          "random_state": 42
+        },
+        "et": {
+          "n_estimators": 250,
+          "max_depth": 15,
+          "min_samples_split": 2,
+          "min_samples_leaf": 1,
+          "max_features": "sqrt",
+          "bootstrap": false,
+          "random_state": 42,
+          "n_jobs": -1
+        }
+      },
+      "timeframe_specific_params": {
+        "1_day": {
+          "lookback_period": 60,
+          "feature_importance_threshold": 0.01
+        },
+        "5_day": {
+          "lookback_period": 90,
+          "feature_importance_threshold": 0.008
+        },
+        "30_day": {
+          "lookback_period": 180,
+          "feature_importance_threshold": 0.005
+        }
+      }
+    },
+    "trained_at": "2026-02-02T23:51:45.407394"
+  },
+  "DRREDDY": {
+    "status": "failed",
+    "error": "Training failed",
+    "trained_at": "2026-02-02T23:51:45.515614"
+  },
+  "GRASIM": {
+    "status": "success",
+    "data_points": 781,
+    "validation_scores": {
+      "1_day": {
+        "mae": 1694.308634870034,
+        "mae_std": 1549.6889806044428,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 780,
+        "features": 234
+      },
+      "5_day": {
+        "mae": 1869.3963901707903,
+        "mae_std": 2337.5434162592,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 776,
+        "features": 234
+      },
+      "30_day": {
+        "mae": 11844.49429039731,
+        "mae_std": 12638.444107764826,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 234
+      }
+    },
+    "model_weights": {
+      "1_day": 0.050295105619728636,
+      "5_day": 0.05026746601328724,
+      "30_day": 0.05004221370602231
+    },
+    "config": {
+      "prediction_timeframes": [
+        1,
+        5,
+        30
+      ],
+      "min_confidence_thresholds": {
+        "1_day": 85,
+        "5_day": 83,
+        "30_day": 80
+      },
+      "max_confidence_thresholds": {
+        "1_day": 96,
+        "5_day": 94,
+        "30_day": 92
+      },
+      "ensemble_models": [
+        "xgb",
+        "rf",
+        "gb",
+        "et"
+      ],
+      "feature_periods": {
+        "returns": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10,
+          14,
+          21,
+          30
+        ],
+        "ma": [
+          5,
+          10,
+          20,
+          50,
+          100
+        ],
+        "volatility": [
+          5,
+          10,
+          20,
+          30
+        ],
+        "volume": [
+          5,
+          10,
+          20
+        ],
+        "lags": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10,
+          14
+        ]
+      },
+      "optimized_params": {
+        "xgb": {
+          "n_estimators": 500,
+          "max_depth": 10,
+          "learning_rate": 0.02,
+          "subsample": 0.95,
+          "colsample_bytree": 0.95,
+          "reg_alpha": 0.05,
+          "reg_lambda": 1.5,
+          "min_child_weight": 1,
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "rf": {
+          "n_estimators": 300,
+          "max_depth": 20,
+          "min_samples_split": 3,
+          "min_samples_leaf": 1,
+          "max_features": "sqrt",
+          "bootstrap": true,
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "gb": {
+          "n_estimators": 300,
+          "max_depth": 8,
+          "learning_rate": 0.03,
+          "subsample": 0.85,
+          "max_features": "sqrt",
+          "min_samples_split": 3,
+          "random_state": 42
+        },
+        "et": {
+          "n_estimators": 250,
+          "max_depth": 15,
+          "min_samples_split": 2,
+          "min_samples_leaf": 1,
+          "max_features": "sqrt",
+          "bootstrap": false,
+          "random_state": 42,
+          "n_jobs": -1
+        }
+      },
+      "timeframe_specific_params": {
+        "1_day": {
+          "lookback_period": 60,
+          "feature_importance_threshold": 0.01
+        },
+        "5_day": {
+          "lookback_period": 90,
+          "feature_importance_threshold": 0.008
+        },
+        "30_day": {
+          "lookback_period": 180,
+          "feature_importance_threshold": 0.005
+        }
+      }
+    },
+    "trained_at": "2026-02-02T23:52:42.201915"
+  },
+  "HCLTECH": {
+    "status": "success",
+    "data_points": 781,
+    "validation_scores": {
+      "1_day": {
+        "mae": 973.770590643305,
+        "mae_std": 1082.7721611207808,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 780,
+        "features": 234
+      },
+      "5_day": {
+        "mae": 2587.8603965732354,
+        "mae_std": 2237.592393456673,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 776,
+        "features": 234
+      },
+      "30_day": {
+        "mae": 4472.980791945608,
+        "mae_std": 3438.1667387275547,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 234
+      }
+    },
+    "model_weights": {
+      "1_day": 0.0505134679608225,
+      "5_day": 0.050193209803924846,
+      "30_day": 0.050111782281915575
+    },
+    "config": {
+      "prediction_timeframes": [
+        1,
+        5,
+        30
+      ],
+      "min_confidence_thresholds": {
+        "1_day": 85,
+        "5_day": 83,
+        "30_day": 80
+      },
+      "max_confidence_thresholds": {
+        "1_day": 96,
+        "5_day": 94,
+        "30_day": 92
+      },
+      "ensemble_models": [
+        "xgb",
+        "rf",
+        "gb",
+        "et"
+      ],
+      "feature_periods": {
+        "returns": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10,
+          14,
+          21,
+          30
+        ],
+        "ma": [
+          5,
+          10,
+          20,
+          50,
+          100
+        ],
+        "volatility": [
+          5,
+          10,
+          20,
+          30
+        ],
+        "volume": [
+          5,
+          10,
+          20
+        ],
+        "lags": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10,
+          14
+        ]
+      },
+      "optimized_params": {
+        "xgb": {
+          "n_estimators": 500,
+          "max_depth": 10,
+          "learning_rate": 0.02,
+          "subsample": 0.95,
+          "colsample_bytree": 0.95,
+          "reg_alpha": 0.05,
+          "reg_lambda": 1.5,
+          "min_child_weight": 1,
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "rf": {
+          "n_estimators": 300,
+          "max_depth": 20,
+          "min_samples_split": 3,
+          "min_samples_leaf": 1,
+          "max_features": "sqrt",
+          "bootstrap": true,
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "gb": {
+          "n_estimators": 300,
+          "max_depth": 8,
+          "learning_rate": 0.03,
+          "subsample": 0.85,
+          "max_features": "sqrt",
+          "min_samples_split": 3,
+          "random_state": 42
+        },
+        "et": {
+          "n_estimators": 250,
+          "max_depth": 15,
+          "min_samples_split": 2,
+          "min_samples_leaf": 1,
+          "max_features": "sqrt",
+          "bootstrap": false,
+          "random_state": 42,
+          "n_jobs": -1
+        }
+      },
+      "timeframe_specific_params": {
+        "1_day": {
+          "lookback_period": 60,
+          "feature_importance_threshold": 0.01
+        },
+        "5_day": {
+          "lookback_period": 90,
+          "feature_importance_threshold": 0.008
+        },
+        "30_day": {
+          "lookback_period": 180,
+          "feature_importance_threshold": 0.005
+        }
+      }
+    },
+    "trained_at": "2026-02-02T23:53:38.088925"
+  },
+  "HDFCBANK": {
+    "status": "success",
+    "data_points": 781,
+    "validation_scores": {
+      "1_day": {
+        "mae": 96.14601377910307,
+        "mae_std": 82.01493875017485,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 780,
+        "features": 234
+      },
+      "5_day": {
+        "mae": 111.7758156272779,
+        "mae_std": 85.11589211687813,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 776,
+        "features": 234
+      },
+      "30_day": {
+        "mae": 95.61642464658158,
+        "mae_std": 59.71648588750834,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 234
+      }
+    },
+    "model_weights": {
+      "1_day": 0.055200423555243114,
+      "5_day": 0.05447323951716028,
+      "30_day": 0.05522922705611383
+    },
+    "config": {
+      "prediction_timeframes": [
+        1,
+        5,
+        30
+      ],
+      "min_confidence_thresholds": {
+        "1_day": 85,
+        "5_day": 83,
+        "30_day": 80
+      },
+      "max_confidence_thresholds": {
+        "1_day": 96,
+        "5_day": 94,
+        "30_day": 92
+      },
+      "ensemble_models": [
+        "xgb",
+        "rf",
+        "gb",
+        "et"
+      ],
+      "feature_periods": {
+        "returns": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10,
+          14,
+          21,
+          30
+        ],
+        "ma": [
+          5,
+          10,
+          20,
+          50,
+          100
+        ],
+        "volatility": [
+          5,
+          10,
+          20,
+          30
+        ],
+        "volume": [
+          5,
+          10,
+          20
+        ],
+        "lags": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10,
+          14
+        ]
+      },
+      "optimized_params": {
+        "xgb": {
+          "n_estimators": 500,
+          "max_depth": 10,
+          "learning_rate": 0.02,
+          "subsample": 0.95,
+          "colsample_bytree": 0.95,
+          "reg_alpha": 0.05,
+          "reg_lambda": 1.5,
+          "min_child_weight": 1,
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "rf": {
+          "n_estimators": 300,
+          "max_depth": 20,
+          "min_samples_split": 3,
+          "min_samples_leaf": 1,
+          "max_features": "sqrt",
+          "bootstrap": true,
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "gb": {
+          "n_estimators": 300,
+          "max_depth": 8,
+          "learning_rate": 0.03,
+          "subsample": 0.85,
+          "max_features": "sqrt",
+          "min_samples_split": 3,
+          "random_state": 42
+        },
+        "et": {
+          "n_estimators": 250,
+          "max_depth": 15,
+          "min_samples_split": 2,
+          "min_samples_leaf": 1,
+          "max_features": "sqrt",
+          "bootstrap": false,
+          "random_state": 42,
+          "n_jobs": -1
+        }
+      },
+      "timeframe_specific_params": {
+        "1_day": {
+          "lookback_period": 60,
+          "feature_importance_threshold": 0.01
+        },
+        "5_day": {
+          "lookback_period": 90,
+          "feature_importance_threshold": 0.008
+        },
+        "30_day": {
+          "lookback_period": 180,
+          "feature_importance_threshold": 0.005
+        }
+      }
+    },
+    "trained_at": "2026-02-02T23:55:04.801540"
+  },
+  "HINDUNILVR": {
+    "status": "success",
+    "data_points": 781,
+    "validation_scores": {
+      "1_day": {
+        "mae": 60.36212031659154,
+        "mae_std": 60.89081670918236,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 780,
+        "features": 234
+      },
+      "5_day": {
+        "mae": 54.15705722265396,
+        "mae_std": 45.330565396393304,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 776,
+        "features": 234
+      },
+      "30_day": {
+        "mae": 81.92964569578092,
+        "mae_std": 77.74121744279546,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 234
+      }
+    },
+    "model_weights": {
+      "1_day": 0.05828334043095611,
+      "5_day": 0.059232406936587434,
+      "30_day": 0.05610279697478237
+    },
+    "config": {
+      "prediction_timeframes": [
+        1,
+        5,
+        30
+      ],
+      "min_confidence_thresholds": {
+        "1_day": 85,
+        "5_day": 83,
+        "30_day": 80
+      },
+      "max_confidence_thresholds": {
+        "1_day": 96,
+        "5_day": 94,
+        "30_day": 92
+      },
+      "ensemble_models": [
+        "xgb",
+        "rf",
+        "gb",
+        "et"
+      ],
+      "feature_periods": {
+        "returns": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10,
+          14,
+          21,
+          30
+        ],
+        "ma": [
+          5,
+          10,
+          20,
+          50,
+          100
+        ],
+        "volatility": [
+          5,
+          10,
+          20,
+          30
+        ],
+        "volume": [
+          5,
+          10,
+          20
+        ],
+        "lags": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10,
+          14
+        ]
+      },
+      "optimized_params": {
+        "xgb": {
+          "n_estimators": 500,
+          "max_depth": 10,
+          "learning_rate": 0.02,
+          "subsample": 0.95,
+          "colsample_bytree": 0.95,
+          "reg_alpha": 0.05,
+          "reg_lambda": 1.5,
+          "min_child_weight": 1,
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "rf": {
+          "n_estimators": 300,
+          "max_depth": 20,
+          "min_samples_split": 3,
+          "min_samples_leaf": 1,
+          "max_features": "sqrt",
+          "bootstrap": true,
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "gb": {
+          "n_estimators": 300,
+          "max_depth": 8,
+          "learning_rate": 0.03,
+          "subsample": 0.85,
+          "max_features": "sqrt",
+          "min_samples_split": 3,
+          "random_state": 42
+        },
+        "et": {
+          "n_estimators": 250,
+          "max_depth": 15,
+          "min_samples_split": 2,
+          "min_samples_leaf": 1,
+          "max_features": "sqrt",
+          "bootstrap": false,
+          "random_state": 42,
+          "n_jobs": -1
+        }
+      },
+      "timeframe_specific_params": {
+        "1_day": {
+          "lookback_period": 60,
+          "feature_importance_threshold": 0.01
+        },
+        "5_day": {
+          "lookback_period": 90,
+          "feature_importance_threshold": 0.008
+        },
+        "30_day": {
+          "lookback_period": 180,
+          "feature_importance_threshold": 0.005
+        }
+      }
+    },
+    "trained_at": "2026-02-02T23:56:43.817790"
+  },
+  "ICICIBANK": {
+    "status": "success",
+    "data_points": 781,
+    "validation_scores": {
+      "1_day": {
+        "mae": 1006.5093851003763,
+        "mae_std": 1086.3878720525915,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 780,
+        "features": 234
+      },
+      "5_day": {
+        "mae": 1993.223590359949,
+        "mae_std": 1652.4730598718086,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 776,
+        "features": 234
+      },
+      "30_day": {
+        "mae": 4610.284876265419,
+        "mae_std": 4679.309907845727,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 234
+      }
+    },
+    "model_weights": {
+      "1_day": 0.050496766355987203,
+      "5_day": 0.05025084993081928,
+      "30_day": 0.050108453167930174
+    },
+    "config": {
+      "prediction_timeframes": [
+        1,
+        5,
+        30
+      ],
+      "min_confidence_thresholds": {
+        "1_day": 85,
+        "5_day": 83,
+        "30_day": 80
+      },
+      "max_confidence_thresholds": {
+        "1_day": 96,
+        "5_day": 94,
+        "30_day": 92
+      },
+      "ensemble_models": [
+        "xgb",
+        "rf",
+        "gb",
+        "et"
+      ],
+      "feature_periods": {
+        "returns": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10,
+          14,
+          21,
+          30
+        ],
+        "ma": [
+          5,
+          10,
+          20,
+          50,
+          100
+        ],
+        "volatility": [
+          5,
+          10,
+          20,
+          30
+        ],
+        "volume": [
+          5,
+          10,
+          20
+        ],
+        "lags": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10,
+          14
+        ]
+      },
+      "optimized_params": {
+        "xgb": {
+          "n_estimators": 500,
+          "max_depth": 10,
+          "learning_rate": 0.02,
+          "subsample": 0.95,
+          "colsample_bytree": 0.95,
+          "reg_alpha": 0.05,
+          "reg_lambda": 1.5,
+          "min_child_weight": 1,
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "rf": {
+          "n_estimators": 300,
+          "max_depth": 20,
+          "min_samples_split": 3,
+          "min_samples_leaf": 1,
+          "max_features": "sqrt",
+          "bootstrap": true,
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "gb": {
+          "n_estimators": 300,
+          "max_depth": 8,
+          "learning_rate": 0.03,
+          "subsample": 0.85,
+          "max_features": "sqrt",
+          "min_samples_split": 3,
+          "random_state": 42
+        },
+        "et": {
+          "n_estimators": 250,
+          "max_depth": 15,
+          "min_samples_split": 2,
+          "min_samples_leaf": 1,
+          "max_features": "sqrt",
+          "bootstrap": false,
+          "random_state": 42,
+          "n_jobs": -1
+        }
+      },
+      "timeframe_specific_params": {
+        "1_day": {
+          "lookback_period": 60,
+          "feature_importance_threshold": 0.01
+        },
+        "5_day": {
+          "lookback_period": 90,
+          "feature_importance_threshold": 0.008
+        },
+        "30_day": {
+          "lookback_period": 180,
+          "feature_importance_threshold": 0.005
+        }
+      }
+    },
+    "trained_at": "2026-02-02T23:57:37.776748"
+  },
+  "INFY": {
+    "status": "success",
+    "data_points": 781,
+    "validation_scores": {
+      "1_day": {
+        "mae": 1404.026399545578,
+        "mae_std": 1250.114109401529,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 780,
+        "features": 234
+      },
+      "5_day": {
+        "mae": 2288.528449118439,
+        "mae_std": 2068.3983328226864,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 776,
+        "features": 234
+      },
+      "30_day": {
+        "mae": 7370.625568317293,
+        "mae_std": 5386.05468301515,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 234
+      }
+    },
+    "model_weights": {
+      "1_day": 0.05035611865973867,
+      "5_day": 0.050218481006855796,
+      "30_day": 0.05006783684713024
+    },
+    "config": {
+      "prediction_timeframes": [
+        1,
+        5,
+        30
+      ],
+      "min_confidence_thresholds": {
+        "1_day": 85,
+        "5_day": 83,
+        "30_day": 80
+      },
+      "max_confidence_thresholds": {
+        "1_day": 96,
+        "5_day": 94,
+        "30_day": 92
+      },
+      "ensemble_models": [
+        "xgb",
+        "rf",
+        "gb",
+        "et"
+      ],
+      "feature_periods": {
+        "returns": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10,
+          14,
+          21,
+          30
+        ],
+        "ma": [
+          5,
+          10,
+          20,
+          50,
+          100
+        ],
+        "volatility": [
+          5,
+          10,
+          20,
+          30
+        ],
+        "volume": [
+          5,
+          10,
+          20
+        ],
+        "lags": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10,
+          14
+        ]
+      },
+      "optimized_params": {
+        "xgb": {
+          "n_estimators": 500,
+          "max_depth": 10,
+          "learning_rate": 0.02,
+          "subsample": 0.95,
+          "colsample_bytree": 0.95,
+          "reg_alpha": 0.05,
+          "reg_lambda": 1.5,
+          "min_child_weight": 1,
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "rf": {
+          "n_estimators": 300,
+          "max_depth": 20,
+          "min_samples_split": 3,
+          "min_samples_leaf": 1,
+          "max_features": "sqrt",
+          "bootstrap": true,
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "gb": {
+          "n_estimators": 300,
+          "max_depth": 8,
+          "learning_rate": 0.03,
+          "subsample": 0.85,
+          "max_features": "sqrt",
+          "min_samples_split": 3,
+          "random_state": 42
+        },
+        "et": {
+          "n_estimators": 250,
+          "max_depth": 15,
+          "min_samples_split": 2,
+          "min_samples_leaf": 1,
+          "max_features": "sqrt",
+          "bootstrap": false,
+          "random_state": 42,
+          "n_jobs": -1
+        }
+      },
+      "timeframe_specific_params": {
+        "1_day": {
+          "lookback_period": 60,
+          "feature_importance_threshold": 0.01
+        },
+        "5_day": {
+          "lookback_period": 90,
+          "feature_importance_threshold": 0.008
+        },
+        "30_day": {
+          "lookback_period": 180,
+          "feature_importance_threshold": 0.005
+        }
+      }
+    },
+    "trained_at": "2026-02-02T23:58:35.173888"
+  },
+  "ITC": {
+    "status": "success",
+    "data_points": 781,
+    "validation_scores": {
+      "1_day": {
+        "mae": 1946.8111743602626,
+        "mae_std": 2178.1223085743122,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 780,
+        "features": 234
+      },
+      "5_day": {
+        "mae": 3141.3611260005027,
+        "mae_std": 3699.916091570337,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 776,
+        "features": 234
+      },
+      "30_day": {
+        "mae": 4300.848430235731,
+        "mae_std": 4177.473547221898,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 234
+      }
+    },
+    "model_weights": {
+      "1_day": 0.050256830249552825,
+      "5_day": 0.050159166673230414,
+      "30_day": 0.05011625613131787
+    },
+    "config": {
+      "prediction_timeframes": [
+        1,
+        5,
+        30
+      ],
+      "min_confidence_thresholds": {
+        "1_day": 85,
+        "5_day": 83,
+        "30_day": 80
+      },
+      "max_confidence_thresholds": {
+        "1_day": 96,
+        "5_day": 94,
+        "30_day": 92
+      },
+      "ensemble_models": [
+        "xgb",
+        "rf",
+        "gb",
+        "et"
+      ],
+      "feature_periods": {
+        "returns": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10,
+          14,
+          21,
+          30
+        ],
+        "ma": [
+          5,
+          10,
+          20,
+          50,
+          100
+        ],
+        "volatility": [
+          5,
+          10,
+          20,
+          30
+        ],
+        "volume": [
+          5,
+          10,
+          20
+        ],
+        "lags": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10,
+          14
+        ]
+      },
+      "optimized_params": {
+        "xgb": {
+          "n_estimators": 500,
+          "max_depth": 10,
+          "learning_rate": 0.02,
+          "subsample": 0.95,
+          "colsample_bytree": 0.95,
+          "reg_alpha": 0.05,
+          "reg_lambda": 1.5,
+          "min_child_weight": 1,
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "rf": {
+          "n_estimators": 300,
+          "max_depth": 20,
+          "min_samples_split": 3,
+          "min_samples_leaf": 1,
+          "max_features": "sqrt",
+          "bootstrap": true,
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "gb": {
+          "n_estimators": 300,
+          "max_depth": 8,
+          "learning_rate": 0.03,
+          "subsample": 0.85,
+          "max_features": "sqrt",
+          "min_samples_split": 3,
+          "random_state": 42
+        },
+        "et": {
+          "n_estimators": 250,
+          "max_depth": 15,
+          "min_samples_split": 2,
+          "min_samples_leaf": 1,
+          "max_features": "sqrt",
+          "bootstrap": false,
+          "random_state": 42,
+          "n_jobs": -1
+        }
+      },
+      "timeframe_specific_params": {
+        "1_day": {
+          "lookback_period": 60,
+          "feature_importance_threshold": 0.01
+        },
+        "5_day": {
+          "lookback_period": 90,
+          "feature_importance_threshold": 0.008
+        },
+        "30_day": {
+          "lookback_period": 180,
+          "feature_importance_threshold": 0.005
+        }
+      }
+    },
+    "trained_at": "2026-02-02T23:59:32.355816"
+  },
+  "JSWSTEEL": {
+    "status": "success",
+    "data_points": 781,
+    "validation_scores": {
+      "1_day": {
+        "mae": 1328.7750185048976,
+        "mae_std": 1202.4987243344679,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 780,
+        "features": 234
+      },
+      "5_day": {
+        "mae": 1993.5219159525307,
+        "mae_std": 1550.2975433510294,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 776,
+        "features": 234
+      },
+      "30_day": {
+        "mae": 4931.556655156881,
+        "mae_std": 4541.066795347917,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 234
+      }
+    },
+    "model_weights": {
+      "1_day": 0.05037628642370648,
+      "5_day": 0.050250812391751554,
+      "30_day": 0.050101387864899774
+    },
+    "config": {
+      "prediction_timeframes": [
+        1,
+        5,
+        30
+      ],
+      "min_confidence_thresholds": {
+        "1_day": 85,
+        "5_day": 83,
+        "30_day": 80
+      },
+      "max_confidence_thresholds": {
+        "1_day": 96,
+        "5_day": 94,
+        "30_day": 92
+      },
+      "ensemble_models": [
+        "xgb",
+        "rf",
+        "gb",
+        "et"
+      ],
+      "feature_periods": {
+        "returns": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10,
+          14,
+          21,
+          30
+        ],
+        "ma": [
+          5,
+          10,
+          20,
+          50,
+          100
+        ],
+        "volatility": [
+          5,
+          10,
+          20,
+          30
+        ],
+        "volume": [
+          5,
+          10,
+          20
+        ],
+        "lags": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10,
+          14
+        ]
+      },
+      "optimized_params": {
+        "xgb": {
+          "n_estimators": 500,
+          "max_depth": 10,
+          "learning_rate": 0.02,
+          "subsample": 0.95,
+          "colsample_bytree": 0.95,
+          "reg_alpha": 0.05,
+          "reg_lambda": 1.5,
+          "min_child_weight": 1,
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "rf": {
+          "n_estimators": 300,
+          "max_depth": 20,
+          "min_samples_split": 3,
+          "min_samples_leaf": 1,
+          "max_features": "sqrt",
+          "bootstrap": true,
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "gb": {
+          "n_estimators": 300,
+          "max_depth": 8,
+          "learning_rate": 0.03,
+          "subsample": 0.85,
+          "max_features": "sqrt",
+          "min_samples_split": 3,
+          "random_state": 42
+        },
+        "et": {
+          "n_estimators": 250,
+          "max_depth": 15,
+          "min_samples_split": 2,
+          "min_samples_leaf": 1,
+          "max_features": "sqrt",
+          "bootstrap": false,
+          "random_state": 42,
+          "n_jobs": -1
+        }
+      },
+      "timeframe_specific_params": {
+        "1_day": {
+          "lookback_period": 60,
+          "feature_importance_threshold": 0.01
+        },
+        "5_day": {
+          "lookback_period": 90,
+          "feature_importance_threshold": 0.008
+        },
+        "30_day": {
+          "lookback_period": 180,
+          "feature_importance_threshold": 0.005
+        }
+      }
+    },
+    "trained_at": "2026-02-03T00:00:25.172939"
+  },
+  "KOTAKBANK": {
+    "status": "success",
+    "data_points": 781,
+    "validation_scores": {
+      "1_day": {
+        "mae": 2253.1316133874006,
+        "mae_std": 2922.2475476973846,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 780,
+        "features": 234
+      },
+      "5_day": {
+        "mae": 2829.4533779815874,
+        "mae_std": 4030.1157082594477,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 776,
+        "features": 234
+      },
+      "30_day": {
+        "mae": 5280.861009001093,
+        "mae_std": 6252.324364406113,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 234
+      }
+    },
+    "model_weights": {
+      "1_day": 0.050221913356861735,
+      "5_day": 0.05017671257767109,
+      "30_day": 0.050094681529972686
+    },
+    "config": {
+      "prediction_timeframes": [
+        1,
+        5,
+        30
+      ],
+      "min_confidence_thresholds": {
+        "1_day": 85,
+        "5_day": 83,
+        "30_day": 80
+      },
+      "max_confidence_thresholds": {
+        "1_day": 96,
+        "5_day": 94,
+        "30_day": 92
+      },
+      "ensemble_models": [
+        "xgb",
+        "rf",
+        "gb",
+        "et"
+      ],
+      "feature_periods": {
+        "returns": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10,
+          14,
+          21,
+          30
+        ],
+        "ma": [
+          5,
+          10,
+          20,
+          50,
+          100
+        ],
+        "volatility": [
+          5,
+          10,
+          20,
+          30
+        ],
+        "volume": [
+          5,
+          10,
+          20
+        ],
+        "lags": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10,
+          14
+        ]
+      },
+      "optimized_params": {
+        "xgb": {
+          "n_estimators": 500,
+          "max_depth": 10,
+          "learning_rate": 0.02,
+          "subsample": 0.95,
+          "colsample_bytree": 0.95,
+          "reg_alpha": 0.05,
+          "reg_lambda": 1.5,
+          "min_child_weight": 1,
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "rf": {
+          "n_estimators": 300,
+          "max_depth": 20,
+          "min_samples_split": 3,
+          "min_samples_leaf": 1,
+          "max_features": "sqrt",
+          "bootstrap": true,
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "gb": {
+          "n_estimators": 300,
+          "max_depth": 8,
+          "learning_rate": 0.03,
+          "subsample": 0.85,
+          "max_features": "sqrt",
+          "min_samples_split": 3,
+          "random_state": 42
+        },
+        "et": {
+          "n_estimators": 250,
+          "max_depth": 15,
+          "min_samples_split": 2,
+          "min_samples_leaf": 1,
+          "max_features": "sqrt",
+          "bootstrap": false,
+          "random_state": 42,
+          "n_jobs": -1
+        }
+      },
+      "timeframe_specific_params": {
+        "1_day": {
+          "lookback_period": 60,
+          "feature_importance_threshold": 0.01
+        },
+        "5_day": {
+          "lookback_period": 90,
+          "feature_importance_threshold": 0.008
+        },
+        "30_day": {
+          "lookback_period": 180,
+          "feature_importance_threshold": 0.005
+        }
+      }
+    },
+    "trained_at": "2026-02-03T00:01:26.023197"
+  },
+  "MARUTI": {
+    "status": "success",
+    "data_points": 781,
+    "validation_scores": {
+      "1_day": {
+        "mae": 2093.6988709862976,
+        "mae_std": 2119.467242318626,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 780,
+        "features": 234
+      },
+      "5_day": {
+        "mae": 3008.198331299964,
+        "mae_std": 3360.735099857663,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 776,
+        "features": 234
+      },
+      "30_day": {
+        "mae": 3399.6795895743026,
+        "mae_std": 2623.7164640070223,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 234
+      }
+    },
+    "model_weights": {
+      "1_day": 0.05023881180177819,
+      "5_day": 0.05016621244504771,
+      "30_day": 0.05014707268337471
+    },
+    "config": {
+      "prediction_timeframes": [
+        1,
+        5,
+        30
+      ],
+      "min_confidence_thresholds": {
+        "1_day": 85,
+        "5_day": 83,
+        "30_day": 80
+      },
+      "max_confidence_thresholds": {
+        "1_day": 96,
+        "5_day": 94,
+        "30_day": 92
+      },
+      "ensemble_models": [
+        "xgb",
+        "rf",
+        "gb",
+        "et"
+      ],
+      "feature_periods": {
+        "returns": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10,
+          14,
+          21,
+          30
+        ],
+        "ma": [
+          5,
+          10,
+          20,
+          50,
+          100
+        ],
+        "volatility": [
+          5,
+          10,
+          20,
+          30
+        ],
+        "volume": [
+          5,
+          10,
+          20
+        ],
+        "lags": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10,
+          14
+        ]
+      },
+      "optimized_params": {
+        "xgb": {
+          "n_estimators": 500,
+          "max_depth": 10,
+          "learning_rate": 0.02,
+          "subsample": 0.95,
+          "colsample_bytree": 0.95,
+          "reg_alpha": 0.05,
+          "reg_lambda": 1.5,
+          "min_child_weight": 1,
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "rf": {
+          "n_estimators": 300,
+          "max_depth": 20,
+          "min_samples_split": 3,
+          "min_samples_leaf": 1,
+          "max_features": "sqrt",
+          "bootstrap": true,
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "gb": {
+          "n_estimators": 300,
+          "max_depth": 8,
+          "learning_rate": 0.03,
+          "subsample": 0.85,
+          "max_features": "sqrt",
+          "min_samples_split": 3,
+          "random_state": 42
+        },
+        "et": {
+          "n_estimators": 250,
+          "max_depth": 15,
+          "min_samples_split": 2,
+          "min_samples_leaf": 1,
+          "max_features": "sqrt",
+          "bootstrap": false,
+          "random_state": 42,
+          "n_jobs": -1
+        }
+      },
+      "timeframe_specific_params": {
+        "1_day": {
+          "lookback_period": 60,
+          "feature_importance_threshold": 0.01
+        },
+        "5_day": {
+          "lookback_period": 90,
+          "feature_importance_threshold": 0.008
+        },
+        "30_day": {
+          "lookback_period": 180,
+          "feature_importance_threshold": 0.005
+        }
+      }
+    },
+    "trained_at": "2026-02-03T00:02:24.844965"
+  },
+  "NTPC": {
+    "status": "success",
+    "data_points": 781,
+    "validation_scores": {
+      "1_day": {
+        "mae": 1861.2749354100724,
+        "mae_std": 1289.4205528339917,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 780,
+        "features": 234
+      },
+      "5_day": {
+        "mae": 1871.2043094390774,
+        "mae_std": 1780.738286310731,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 776,
+        "features": 234
+      },
+      "30_day": {
+        "mae": 6157.06118106756,
+        "mae_std": 4822.6101460255495,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 234
+      }
+    },
+    "model_weights": {
+      "1_day": 0.05026863306984855,
+      "5_day": 0.050267207593104934,
+      "30_day": 0.050081207573745776
+    },
+    "config": {
+      "prediction_timeframes": [
+        1,
+        5,
+        30
+      ],
+      "min_confidence_thresholds": {
+        "1_day": 85,
+        "5_day": 83,
+        "30_day": 80
+      },
+      "max_confidence_thresholds": {
+        "1_day": 96,
+        "5_day": 94,
+        "30_day": 92
+      },
+      "ensemble_models": [
+        "xgb",
+        "rf",
+        "gb",
+        "et"
+      ],
+      "feature_periods": {
+        "returns": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10,
+          14,
+          21,
+          30
+        ],
+        "ma": [
+          5,
+          10,
+          20,
+          50,
+          100
+        ],
+        "volatility": [
+          5,
+          10,
+          20,
+          30
+        ],
+        "volume": [
+          5,
+          10,
+          20
+        ],
+        "lags": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10,
+          14
+        ]
+      },
+      "optimized_params": {
+        "xgb": {
+          "n_estimators": 500,
+          "max_depth": 10,
+          "learning_rate": 0.02,
+          "subsample": 0.95,
+          "colsample_bytree": 0.95,
+          "reg_alpha": 0.05,
+          "reg_lambda": 1.5,
+          "min_child_weight": 1,
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "rf": {
+          "n_estimators": 300,
+          "max_depth": 20,
+          "min_samples_split": 3,
+          "min_samples_leaf": 1,
+          "max_features": "sqrt",
+          "bootstrap": true,
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "gb": {
+          "n_estimators": 300,
+          "max_depth": 8,
+          "learning_rate": 0.03,
+          "subsample": 0.85,
+          "max_features": "sqrt",
+          "min_samples_split": 3,
+          "random_state": 42
+        },
+        "et": {
+          "n_estimators": 250,
+          "max_depth": 15,
+          "min_samples_split": 2,
+          "min_samples_leaf": 1,
+          "max_features": "sqrt",
+          "bootstrap": false,
+          "random_state": 42,
+          "n_jobs": -1
+        }
+      },
+      "timeframe_specific_params": {
+        "1_day": {
+          "lookback_period": 60,
+          "feature_importance_threshold": 0.01
+        },
+        "5_day": {
+          "lookback_period": 90,
+          "feature_importance_threshold": 0.008
+        },
+        "30_day": {
+          "lookback_period": 180,
+          "feature_importance_threshold": 0.005
+        }
+      }
+    },
+    "trained_at": "2026-02-03T00:03:19.627834"
+  },
+  "ONGC": {
+    "status": "success",
+    "data_points": 781,
+    "validation_scores": {
+      "1_day": {
+        "mae": 213.540928225074,
+        "mae_std": 349.08702607925835,
+        "r2": -50298.40239684131,
+        "r2_std": 100596.8047936826,
+        "samples": 780,
+        "features": 234
+      },
+      "5_day": {
+        "mae": 218.6345198022053,
+        "mae_std": 349.057880008108,
+        "r2": -932134.8683582585,
+        "r2_std": 1864269.736716517,
+        "samples": 776,
+        "features": 234
+      },
+      "30_day": {
+        "mae": 128.11224662149542,
+        "mae_std": 136.48520175589,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 234
+      }
+    },
+    "model_weights": {
+      "1_day": 0.052341471500636755,
+      "5_day": 0.05228692156282283,
+      "30_day": 0.05390282747577139
+    },
+    "config": {
+      "prediction_timeframes": [
+        1,
+        5,
+        30
+      ],
+      "min_confidence_thresholds": {
+        "1_day": 85,
+        "5_day": 83,
+        "30_day": 80
+      },
+      "max_confidence_thresholds": {
+        "1_day": 96,
+        "5_day": 94,
+        "30_day": 92
+      },
+      "ensemble_models": [
+        "xgb",
+        "rf",
+        "gb",
+        "et"
+      ],
+      "feature_periods": {
+        "returns": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10,
+          14,
+          21,
+          30
+        ],
+        "ma": [
+          5,
+          10,
+          20,
+          50,
+          100
+        ],
+        "volatility": [
+          5,
+          10,
+          20,
+          30
+        ],
+        "volume": [
+          5,
+          10,
+          20
+        ],
+        "lags": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10,
+          14
+        ]
+      },
+      "optimized_params": {
+        "xgb": {
+          "n_estimators": 500,
+          "max_depth": 10,
+          "learning_rate": 0.02,
+          "subsample": 0.95,
+          "colsample_bytree": 0.95,
+          "reg_alpha": 0.05,
+          "reg_lambda": 1.5,
+          "min_child_weight": 1,
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "rf": {
+          "n_estimators": 300,
+          "max_depth": 20,
+          "min_samples_split": 3,
+          "min_samples_leaf": 1,
+          "max_features": "sqrt",
+          "bootstrap": true,
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "gb": {
+          "n_estimators": 300,
+          "max_depth": 8,
+          "learning_rate": 0.03,
+          "subsample": 0.85,
+          "max_features": "sqrt",
+          "min_samples_split": 3,
+          "random_state": 42
+        },
+        "et": {
+          "n_estimators": 250,
+          "max_depth": 15,
+          "min_samples_split": 2,
+          "min_samples_leaf": 1,
+          "max_features": "sqrt",
+          "bootstrap": false,
+          "random_state": 42,
+          "n_jobs": -1
+        }
+      },
+      "timeframe_specific_params": {
+        "1_day": {
+          "lookback_period": 60,
+          "feature_importance_threshold": 0.01
+        },
+        "5_day": {
+          "lookback_period": 90,
+          "feature_importance_threshold": 0.008
+        },
+        "30_day": {
+          "lookback_period": 180,
+          "feature_importance_threshold": 0.005
+        }
+      }
+    },
+    "trained_at": "2026-02-03T00:05:36.242647"
+  },
+  "POWERGRID": {
+    "status": "failed",
+    "error": "Training failed",
+    "trained_at": "2026-02-03T00:05:36.429718"
+  },
+  "RELIANCE": {
+    "status": "success",
+    "data_points": 781,
+    "validation_scores": {
+      "1_day": {
+        "mae": 1234.4117234932799,
+        "mae_std": 1199.2965846163265,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 780,
+        "features": 234
+      },
+      "5_day": {
+        "mae": 2043.5372148834642,
+        "mae_std": 1417.1313951777604,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 776,
+        "features": 234
+      },
+      "30_day": {
+        "mae": 5542.699672145609,
+        "mae_std": 6071.784108960274,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 234
+      }
+    },
+    "model_weights": {
+      "1_day": 0.05040505124026204,
+      "5_day": 0.05024467379214518,
+      "30_day": 0.05009020874835101
+    },
+    "config": {
+      "prediction_timeframes": [
+        1,
+        5,
+        30
+      ],
+      "min_confidence_thresholds": {
+        "1_day": 85,
+        "5_day": 83,
+        "30_day": 80
+      },
+      "max_confidence_thresholds": {
+        "1_day": 96,
+        "5_day": 94,
+        "30_day": 92
+      },
+      "ensemble_models": [
+        "xgb",
+        "rf",
+        "gb",
+        "et"
+      ],
+      "feature_periods": {
+        "returns": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10,
+          14,
+          21,
+          30
+        ],
+        "ma": [
+          5,
+          10,
+          20,
+          50,
+          100
+        ],
+        "volatility": [
+          5,
+          10,
+          20,
+          30
+        ],
+        "volume": [
+          5,
+          10,
+          20
+        ],
+        "lags": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10,
+          14
+        ]
+      },
+      "optimized_params": {
+        "xgb": {
+          "n_estimators": 500,
+          "max_depth": 10,
+          "learning_rate": 0.02,
+          "subsample": 0.95,
+          "colsample_bytree": 0.95,
+          "reg_alpha": 0.05,
+          "reg_lambda": 1.5,
+          "min_child_weight": 1,
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "rf": {
+          "n_estimators": 300,
+          "max_depth": 20,
+          "min_samples_split": 3,
+          "min_samples_leaf": 1,
+          "max_features": "sqrt",
+          "bootstrap": true,
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "gb": {
+          "n_estimators": 300,
+          "max_depth": 8,
+          "learning_rate": 0.03,
+          "subsample": 0.85,
+          "max_features": "sqrt",
+          "min_samples_split": 3,
+          "random_state": 42
+        },
+        "et": {
+          "n_estimators": 250,
+          "max_depth": 15,
+          "min_samples_split": 2,
+          "min_samples_leaf": 1,
+          "max_features": "sqrt",
+          "bootstrap": false,
+          "random_state": 42,
+          "n_jobs": -1
+        }
+      },
+      "timeframe_specific_params": {
+        "1_day": {
+          "lookback_period": 60,
+          "feature_importance_threshold": 0.01
+        },
+        "5_day": {
+          "lookback_period": 90,
+          "feature_importance_threshold": 0.008
+        },
+        "30_day": {
+          "lookback_period": 180,
+          "feature_importance_threshold": 0.005
+        }
+      }
+    },
+    "trained_at": "2026-02-03T00:06:30.026315"
+  },
+  "SBIN": {
+    "status": "failed",
+    "error": "Training failed",
+    "trained_at": "2026-02-03T00:06:30.132013"
+  },
+  "SUNPHARMA": {
+    "status": "success",
+    "data_points": 781,
+    "validation_scores": {
+      "1_day": {
+        "mae": 756.7762513116646,
+        "mae_std": 968.6977509243683,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 780,
+        "features": 234
+      },
+      "5_day": {
+        "mae": 2225.302183125203,
+        "mae_std": 2354.673604464861,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 776,
+        "features": 234
+      },
+      "30_day": {
+        "mae": 4064.152048438754,
+        "mae_std": 3410.7161948915104,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 234
+      }
+    },
+    "model_weights": {
+      "1_day": 0.0506606972648424,
+      "5_day": 0.05022468858547252,
+      "30_day": 0.05012302689316682
+    },
+    "config": {
+      "prediction_timeframes": [
+        1,
+        5,
+        30
+      ],
+      "min_confidence_thresholds": {
+        "1_day": 85,
+        "5_day": 83,
+        "30_day": 80
+      },
+      "max_confidence_thresholds": {
+        "1_day": 96,
+        "5_day": 94,
+        "30_day": 92
+      },
+      "ensemble_models": [
+        "xgb",
+        "rf",
+        "gb",
+        "et"
+      ],
+      "feature_periods": {
+        "returns": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10,
+          14,
+          21,
+          30
+        ],
+        "ma": [
+          5,
+          10,
+          20,
+          50,
+          100
+        ],
+        "volatility": [
+          5,
+          10,
+          20,
+          30
+        ],
+        "volume": [
+          5,
+          10,
+          20
+        ],
+        "lags": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10,
+          14
+        ]
+      },
+      "optimized_params": {
+        "xgb": {
+          "n_estimators": 500,
+          "max_depth": 10,
+          "learning_rate": 0.02,
+          "subsample": 0.95,
+          "colsample_bytree": 0.95,
+          "reg_alpha": 0.05,
+          "reg_lambda": 1.5,
+          "min_child_weight": 1,
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "rf": {
+          "n_estimators": 300,
+          "max_depth": 20,
+          "min_samples_split": 3,
+          "min_samples_leaf": 1,
+          "max_features": "sqrt",
+          "bootstrap": true,
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "gb": {
+          "n_estimators": 300,
+          "max_depth": 8,
+          "learning_rate": 0.03,
+          "subsample": 0.85,
+          "max_features": "sqrt",
+          "min_samples_split": 3,
+          "random_state": 42
+        },
+        "et": {
+          "n_estimators": 250,
+          "max_depth": 15,
+          "min_samples_split": 2,
+          "min_samples_leaf": 1,
+          "max_features": "sqrt",
+          "bootstrap": false,
+          "random_state": 42,
+          "n_jobs": -1
+        }
+      },
+      "timeframe_specific_params": {
+        "1_day": {
+          "lookback_period": 60,
+          "feature_importance_threshold": 0.01
+        },
+        "5_day": {
+          "lookback_period": 90,
+          "feature_importance_threshold": 0.008
+        },
+        "30_day": {
+          "lookback_period": 180,
+          "feature_importance_threshold": 0.005
+        }
+      }
+    },
+    "trained_at": "2026-02-03T00:07:22.861817"
+  },
+  "TATAMOTORS": {
+    "status": "success",
+    "data_points": 781,
+    "validation_scores": {
+      "1_day": {
+        "mae": 1639.2696795466686,
+        "mae_std": 2222.1147966727385,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 780,
+        "features": 234
+      },
+      "5_day": {
+        "mae": 3118.227185230598,
+        "mae_std": 3752.179439357287,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 776,
+        "features": 234
+      },
+      "30_day": {
+        "mae": 6024.940802448086,
+        "mae_std": 5069.01303096211,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 234
+      }
+    },
+    "model_weights": {
+      "1_day": 0.05030501387656561,
+      "5_day": 0.050160347521247935,
+      "30_day": 0.0500829883672407
+    },
+    "config": {
+      "prediction_timeframes": [
+        1,
+        5,
+        30
+      ],
+      "min_confidence_thresholds": {
+        "1_day": 85,
+        "5_day": 83,
+        "30_day": 80
+      },
+      "max_confidence_thresholds": {
+        "1_day": 96,
+        "5_day": 94,
+        "30_day": 92
+      },
+      "ensemble_models": [
+        "xgb",
+        "rf",
+        "gb",
+        "et"
+      ],
+      "feature_periods": {
+        "returns": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10,
+          14,
+          21,
+          30
+        ],
+        "ma": [
+          5,
+          10,
+          20,
+          50,
+          100
+        ],
+        "volatility": [
+          5,
+          10,
+          20,
+          30
+        ],
+        "volume": [
+          5,
+          10,
+          20
+        ],
+        "lags": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10,
+          14
+        ]
+      },
+      "optimized_params": {
+        "xgb": {
+          "n_estimators": 500,
+          "max_depth": 10,
+          "learning_rate": 0.02,
+          "subsample": 0.95,
+          "colsample_bytree": 0.95,
+          "reg_alpha": 0.05,
+          "reg_lambda": 1.5,
+          "min_child_weight": 1,
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "rf": {
+          "n_estimators": 300,
+          "max_depth": 20,
+          "min_samples_split": 3,
+          "min_samples_leaf": 1,
+          "max_features": "sqrt",
+          "bootstrap": true,
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "gb": {
+          "n_estimators": 300,
+          "max_depth": 8,
+          "learning_rate": 0.03,
+          "subsample": 0.85,
+          "max_features": "sqrt",
+          "min_samples_split": 3,
+          "random_state": 42
+        },
+        "et": {
+          "n_estimators": 250,
+          "max_depth": 15,
+          "min_samples_split": 2,
+          "min_samples_leaf": 1,
+          "max_features": "sqrt",
+          "bootstrap": false,
+          "random_state": 42,
+          "n_jobs": -1
+        }
+      },
+      "timeframe_specific_params": {
+        "1_day": {
+          "lookback_period": 60,
+          "feature_importance_threshold": 0.01
+        },
+        "5_day": {
+          "lookback_period": 90,
+          "feature_importance_threshold": 0.008
+        },
+        "30_day": {
+          "lookback_period": 180,
+          "feature_importance_threshold": 0.005
+        }
+      }
+    },
+    "trained_at": "2026-02-03T00:08:20.209477"
+  },
+  "TCS": {
+    "status": "success",
+    "data_points": 781,
+    "validation_scores": {
+      "1_day": {
+        "mae": 136.8298352131554,
+        "mae_std": 121.93080861457075,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 780,
+        "features": 234
+      },
+      "5_day": {
+        "mae": 123.17022415785314,
+        "mae_std": 89.84817403134404,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 776,
+        "features": 234
+      },
+      "30_day": {
+        "mae": 49.24172633274063,
+        "mae_std": 28.321212696757183,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 234
+      }
+    },
+    "model_weights": {
+      "1_day": 0.05365417378137538,
+      "5_day": 0.05405942263529362,
+      "30_day": 0.06015398985948148
+    },
+    "config": {
+      "prediction_timeframes": [
+        1,
+        5,
+        30
+      ],
+      "min_confidence_thresholds": {
+        "1_day": 85,
+        "5_day": 83,
+        "30_day": 80
+      },
+      "max_confidence_thresholds": {
+        "1_day": 96,
+        "5_day": 94,
+        "30_day": 92
+      },
+      "ensemble_models": [
+        "xgb",
+        "rf",
+        "gb",
+        "et"
+      ],
+      "feature_periods": {
+        "returns": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10,
+          14,
+          21,
+          30
+        ],
+        "ma": [
+          5,
+          10,
+          20,
+          50,
+          100
+        ],
+        "volatility": [
+          5,
+          10,
+          20,
+          30
+        ],
+        "volume": [
+          5,
+          10,
+          20
+        ],
+        "lags": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10,
+          14
+        ]
+      },
+      "optimized_params": {
+        "xgb": {
+          "n_estimators": 500,
+          "max_depth": 10,
+          "learning_rate": 0.02,
+          "subsample": 0.95,
+          "colsample_bytree": 0.95,
+          "reg_alpha": 0.05,
+          "reg_lambda": 1.5,
+          "min_child_weight": 1,
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "rf": {
+          "n_estimators": 300,
+          "max_depth": 20,
+          "min_samples_split": 3,
+          "min_samples_leaf": 1,
+          "max_features": "sqrt",
+          "bootstrap": true,
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "gb": {
+          "n_estimators": 300,
+          "max_depth": 8,
+          "learning_rate": 0.03,
+          "subsample": 0.85,
+          "max_features": "sqrt",
+          "min_samples_split": 3,
+          "random_state": 42
+        },
+        "et": {
+          "n_estimators": 250,
+          "max_depth": 15,
+          "min_samples_split": 2,
+          "min_samples_leaf": 1,
+          "max_features": "sqrt",
+          "bootstrap": false,
+          "random_state": 42,
+          "n_jobs": -1
+        }
+      },
+      "timeframe_specific_params": {
+        "1_day": {
+          "lookback_period": 60,
+          "feature_importance_threshold": 0.01
+        },
+        "5_day": {
+          "lookback_period": 90,
+          "feature_importance_threshold": 0.008
+        },
+        "30_day": {
+          "lookback_period": 180,
+          "feature_importance_threshold": 0.005
+        }
+      }
+    },
+    "trained_at": "2026-02-03T00:09:45.795402"
+  },
+  "TECHM": {
+    "status": "success",
+    "data_points": 781,
+    "validation_scores": {
+      "1_day": {
+        "mae": 1653.5304209221445,
+        "mae_std": 1469.1394246007885,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 780,
+        "features": 234
+      },
+      "5_day": {
+        "mae": 1978.820777607496,
+        "mae_std": 1581.2559638442262,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 776,
+        "features": 234
+      },
+      "30_day": {
+        "mae": 4724.4112020636185,
+        "mae_std": 4859.640431665589,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 234
+      }
+    },
+    "model_weights": {
+      "1_day": 0.05030238330868977,
+      "5_day": 0.050252675737694576,
+      "30_day": 0.05010583329403583
+    },
+    "config": {
+      "prediction_timeframes": [
+        1,
+        5,
+        30
+      ],
+      "min_confidence_thresholds": {
+        "1_day": 85,
+        "5_day": 83,
+        "30_day": 80
+      },
+      "max_confidence_thresholds": {
+        "1_day": 96,
+        "5_day": 94,
+        "30_day": 92
+      },
+      "ensemble_models": [
+        "xgb",
+        "rf",
+        "gb",
+        "et"
+      ],
+      "feature_periods": {
+        "returns": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10,
+          14,
+          21,
+          30
+        ],
+        "ma": [
+          5,
+          10,
+          20,
+          50,
+          100
+        ],
+        "volatility": [
+          5,
+          10,
+          20,
+          30
+        ],
+        "volume": [
+          5,
+          10,
+          20
+        ],
+        "lags": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10,
+          14
+        ]
+      },
+      "optimized_params": {
+        "xgb": {
+          "n_estimators": 500,
+          "max_depth": 10,
+          "learning_rate": 0.02,
+          "subsample": 0.95,
+          "colsample_bytree": 0.95,
+          "reg_alpha": 0.05,
+          "reg_lambda": 1.5,
+          "min_child_weight": 1,
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "rf": {
+          "n_estimators": 300,
+          "max_depth": 20,
+          "min_samples_split": 3,
+          "min_samples_leaf": 1,
+          "max_features": "sqrt",
+          "bootstrap": true,
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "gb": {
+          "n_estimators": 300,
+          "max_depth": 8,
+          "learning_rate": 0.03,
+          "subsample": 0.85,
+          "max_features": "sqrt",
+          "min_samples_split": 3,
+          "random_state": 42
+        },
+        "et": {
+          "n_estimators": 250,
+          "max_depth": 15,
+          "min_samples_split": 2,
+          "min_samples_leaf": 1,
+          "max_features": "sqrt",
+          "bootstrap": false,
+          "random_state": 42,
+          "n_jobs": -1
+        }
+      },
+      "timeframe_specific_params": {
+        "1_day": {
+          "lookback_period": 60,
+          "feature_importance_threshold": 0.01
+        },
+        "5_day": {
+          "lookback_period": 90,
+          "feature_importance_threshold": 0.008
+        },
+        "30_day": {
+          "lookback_period": 180,
+          "feature_importance_threshold": 0.005
+        }
+      }
+    },
+    "trained_at": "2026-02-03T00:10:41.916427"
+  },
+  "TITAN": {
+    "status": "success",
+    "data_points": 781,
+    "validation_scores": {
+      "1_day": {
+        "mae": 240.32681811802848,
+        "mae_std": 387.58555163123464,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 780,
+        "features": 234
+      },
+      "5_day": {
+        "mae": 229.5651325209896,
+        "mae_std": 366.13488092913036,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 776,
+        "features": 234
+      },
+      "30_day": {
+        "mae": 255.45047019365725,
+        "mae_std": 292.011555744169,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 234
+      }
+    },
+    "model_weights": {
+      "1_day": 0.05208050021980461,
+      "5_day": 0.05217803109876128,
+      "30_day": 0.05195732659119251
+    },
+    "config": {
+      "prediction_timeframes": [
+        1,
+        5,
+        30
+      ],
+      "min_confidence_thresholds": {
+        "1_day": 85,
+        "5_day": 83,
+        "30_day": 80
+      },
+      "max_confidence_thresholds": {
+        "1_day": 96,
+        "5_day": 94,
+        "30_day": 92
+      },
+      "ensemble_models": [
+        "xgb",
+        "rf",
+        "gb",
+        "et"
+      ],
+      "feature_periods": {
+        "returns": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10,
+          14,
+          21,
+          30
+        ],
+        "ma": [
+          5,
+          10,
+          20,
+          50,
+          100
+        ],
+        "volatility": [
+          5,
+          10,
+          20,
+          30
+        ],
+        "volume": [
+          5,
+          10,
+          20
+        ],
+        "lags": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10,
+          14
+        ]
+      },
+      "optimized_params": {
+        "xgb": {
+          "n_estimators": 500,
+          "max_depth": 10,
+          "learning_rate": 0.02,
+          "subsample": 0.95,
+          "colsample_bytree": 0.95,
+          "reg_alpha": 0.05,
+          "reg_lambda": 1.5,
+          "min_child_weight": 1,
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "rf": {
+          "n_estimators": 300,
+          "max_depth": 20,
+          "min_samples_split": 3,
+          "min_samples_leaf": 1,
+          "max_features": "sqrt",
+          "bootstrap": true,
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "gb": {
+          "n_estimators": 300,
+          "max_depth": 8,
+          "learning_rate": 0.03,
+          "subsample": 0.85,
+          "max_features": "sqrt",
+          "min_samples_split": 3,
+          "random_state": 42
+        },
+        "et": {
+          "n_estimators": 250,
+          "max_depth": 15,
+          "min_samples_split": 2,
+          "min_samples_leaf": 1,
+          "max_features": "sqrt",
+          "bootstrap": false,
+          "random_state": 42,
+          "n_jobs": -1
+        }
+      },
+      "timeframe_specific_params": {
+        "1_day": {
+          "lookback_period": 60,
+          "feature_importance_threshold": 0.01
+        },
+        "5_day": {
+          "lookback_period": 90,
+          "feature_importance_threshold": 0.008
+        },
+        "30_day": {
+          "lookback_period": 180,
+          "feature_importance_threshold": 0.005
+        }
+      }
+    },
+    "trained_at": "2026-02-03T00:12:35.174675"
+  },
+  "ULTRACEMCO": {
+    "status": "success",
+    "data_points": 781,
+    "validation_scores": {
+      "1_day": {
+        "mae": 1410.838853287574,
+        "mae_std": 1654.6781052676788,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 780,
+        "features": 234
+      },
+      "5_day": {
+        "mae": 2192.526710513294,
+        "mae_std": 2126.921464492626,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 776,
+        "features": 234
+      },
+      "30_day": {
+        "mae": 3728.97250179007,
+        "mae_std": 4561.724439144236,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 234
+      }
+    },
+    "model_weights": {
+      "1_day": 0.050354399085679055,
+      "5_day": 0.05022804739270652,
+      "30_day": 0.05013408519360921
+    },
+    "config": {
+      "prediction_timeframes": [
+        1,
+        5,
+        30
+      ],
+      "min_confidence_thresholds": {
+        "1_day": 85,
+        "5_day": 83,
+        "30_day": 80
+      },
+      "max_confidence_thresholds": {
+        "1_day": 96,
+        "5_day": 94,
+        "30_day": 92
+      },
+      "ensemble_models": [
+        "xgb",
+        "rf",
+        "gb",
+        "et"
+      ],
+      "feature_periods": {
+        "returns": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10,
+          14,
+          21,
+          30
+        ],
+        "ma": [
+          5,
+          10,
+          20,
+          50,
+          100
+        ],
+        "volatility": [
+          5,
+          10,
+          20,
+          30
+        ],
+        "volume": [
+          5,
+          10,
+          20
+        ],
+        "lags": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10,
+          14
+        ]
+      },
+      "optimized_params": {
+        "xgb": {
+          "n_estimators": 500,
+          "max_depth": 10,
+          "learning_rate": 0.02,
+          "subsample": 0.95,
+          "colsample_bytree": 0.95,
+          "reg_alpha": 0.05,
+          "reg_lambda": 1.5,
+          "min_child_weight": 1,
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "rf": {
+          "n_estimators": 300,
+          "max_depth": 20,
+          "min_samples_split": 3,
+          "min_samples_leaf": 1,
+          "max_features": "sqrt",
+          "bootstrap": true,
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "gb": {
+          "n_estimators": 300,
+          "max_depth": 8,
+          "learning_rate": 0.03,
+          "subsample": 0.85,
+          "max_features": "sqrt",
+          "min_samples_split": 3,
+          "random_state": 42
+        },
+        "et": {
+          "n_estimators": 250,
+          "max_depth": 15,
+          "min_samples_split": 2,
+          "min_samples_leaf": 1,
+          "max_features": "sqrt",
+          "bootstrap": false,
+          "random_state": 42,
+          "n_jobs": -1
+        }
+      },
+      "timeframe_specific_params": {
+        "1_day": {
+          "lookback_period": 60,
+          "feature_importance_threshold": 0.01
+        },
+        "5_day": {
+          "lookback_period": 90,
+          "feature_importance_threshold": 0.008
+        },
+        "30_day": {
+          "lookback_period": 180,
+          "feature_importance_threshold": 0.005
+        }
+      }
+    },
+    "trained_at": "2026-02-03T00:13:28.781248"
+  },
+  "WIPRO": {
+    "status": "success",
+    "data_points": 781,
+    "validation_scores": {
+      "1_day": {
+        "mae": 19.07737429003217,
+        "mae_std": 20.473372589655657,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 780,
+        "features": 234
+      },
+      "5_day": {
+        "mae": 19.092531685235084,
+        "mae_std": 20.611071795965323,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 776,
+        "features": 234
+      },
+      "30_day": {
+        "mae": 18.895903042226287,
+        "mae_std": 17.86752216639401,
+        "r2": 0.0,
+        "r2_std": 0.0,
+        "samples": 751,
+        "features": 234
+      }
+    },
+    "model_weights": {
+      "1_day": 0.07620905614103253,
+      "5_day": 0.07618824899991751,
+      "30_day": 0.07646076096082306
+    },
+    "config": {
+      "prediction_timeframes": [
+        1,
+        5,
+        30
+      ],
+      "min_confidence_thresholds": {
+        "1_day": 85,
+        "5_day": 83,
+        "30_day": 80
+      },
+      "max_confidence_thresholds": {
+        "1_day": 96,
+        "5_day": 94,
+        "30_day": 92
+      },
+      "ensemble_models": [
+        "xgb",
+        "rf",
+        "gb",
+        "et"
+      ],
+      "feature_periods": {
+        "returns": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10,
+          14,
+          21,
+          30
+        ],
+        "ma": [
+          5,
+          10,
+          20,
+          50,
+          100
+        ],
+        "volatility": [
+          5,
+          10,
+          20,
+          30
+        ],
+        "volume": [
+          5,
+          10,
+          20
+        ],
+        "lags": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10,
+          14
+        ]
+      },
+      "optimized_params": {
+        "xgb": {
+          "n_estimators": 500,
+          "max_depth": 10,
+          "learning_rate": 0.02,
+          "subsample": 0.95,
+          "colsample_bytree": 0.95,
+          "reg_alpha": 0.05,
+          "reg_lambda": 1.5,
+          "min_child_weight": 1,
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "rf": {
+          "n_estimators": 300,
+          "max_depth": 20,
+          "min_samples_split": 3,
+          "min_samples_leaf": 1,
+          "max_features": "sqrt",
+          "bootstrap": true,
+          "random_state": 42,
+          "n_jobs": -1
+        },
+        "gb": {
+          "n_estimators": 300,
+          "max_depth": 8,
+          "learning_rate": 0.03,
+          "subsample": 0.85,
+          "max_features": "sqrt",
+          "min_samples_split": 3,
+          "random_state": 42
+        },
+        "et": {
+          "n_estimators": 250,
+          "max_depth": 15,
+          "min_samples_split": 2,
+          "min_samples_leaf": 1,
+          "max_features": "sqrt",
+          "bootstrap": false,
+          "random_state": 42,
+          "n_jobs": -1
+        }
+      },
+      "timeframe_specific_params": {
+        "1_day": {
+          "lookback_period": 60,
+          "feature_importance_threshold": 0.01
+        },
+        "5_day": {
+          "lookback_period": 90,
+          "feature_importance_threshold": 0.008
+        },
+        "30_day": {
+          "lookback_period": 180,
+          "feature_importance_threshold": 0.005
+        }
+      }
+    },
+    "trained_at": "2026-02-03T00:14:54.458475"
+  }
+}

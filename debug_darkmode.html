@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debug Dark Mode</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+            color: #1f2937;
+            transition: all 0.3s ease;
+        }
+        
+        body.dark-mode {
+            background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
+            color: #f9fafb;
+        }
+        
+        .test-button {
+            padding: 12px 24px;
+            background: #3b82f6;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 500;
+        }
+        
+        .test-button:hover {
+            background: #2563eb;
+        }
+        
+        .status {
+            margin-top: 20px;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex items-center justify-center">
+    <div class="text-center">
+        <h1 class="text-2xl font-bold mb-4">Debug Dark Mode</h1>
+        
+        <button 
+            id="darkModeToggle"
+            class="test-button"
+            onclick="testDarkMode()"
+        >
+            <i id="darkModeIcon" class="fas fa-moon mr-2"></i>
+            Toggle Dark Mode
+        </button>
+        
+        <div id="status" class="status">Click the button to test</div>
+        
+        <div id="console-output" class="status mt-4 max-w-md text-left text-xs font-mono"></div>
+    </div>
+    
+    <script>
+        function testDarkMode() {
+            const body = document.body;
+            const darkModeIcon = document.getElementById('darkModeIcon');
+            const status = document.getElementById('status');
+            const consoleOutput = document.getElementById('console-output');
+            
+            console.log('=== Dark Mode Test ===');
+            console.log('Body element:', body);
+            console.log('Dark mode icon:', darkModeIcon);
+            
+            if (!body || !darkModeIcon) {
+                console.error('ERROR: Required elements not found');
+                status.textContent = 'ERROR: Elements not found';
+                consoleOutput.textContent = 'ERROR: Required elements not found';
+                return;
+            }
+            
+            body.classList.toggle('dark-mode');
+            
+            const isDarkMode = body.classList.contains('dark-mode');
+            console.log('Dark mode toggled:', isDarkMode);
+            
+            if (isDarkMode) {
+                darkModeIcon.classList.remove('fa-moon');
+                darkModeIcon.classList.add('fa-sun');
+                status.textContent = 'Dark Mode Enabled';
+                status.style.color = '#fbbf24';
+                consoleOutput.textContent = 'SUCCESS: Dark mode enabled';
+            } else {
+                darkModeIcon.classList.remove('fa-sun');
+                darkModeIcon.classList.add('fa-moon');
+                status.textContent = 'Light Mode Enabled';
+                status.style.color = '#6b7280';
+                consoleOutput.textContent = 'SUCCESS: Light mode enabled';
+            }
+            
+            // Update console output
+            const logs = [
+                `Dark mode toggled: ${isDarkMode}`,
+                `Icon class: ${darkModeIcon.className}`,
+                `Body classes: ${body.className}`
+            ];
+            consoleOutput.textContent = logs.join(' | ');
+        }
+        
+        // Test on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('=== Page Loaded ===');
+            const toggleBtn = document.getElementById('darkModeToggle');
+            const toggleIcon = document.getElementById('darkModeIcon');
+            
+            console.log('Button found:', !!toggleBtn);
+            console.log('Icon found:', !!toggleIcon);
+            
+            // Add click listener
+            toggleBtn.addEventListener('click', function() {
+                console.log('Button clicked via event listener');
+                testDarkMode();
+            });
+            
+            console.log('Event listener added');
+        });
+    </script>
+</body>
+</html>
